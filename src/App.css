@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-primary {
+    background-color: #FF6B00;
+}
+
+.bg-secondary {
+    background-color: #56DFE6;
+}
+
+.color-primary {
+    color: #FF6B00;
+}
+
+.color-secondary {
+    color: #56DFE6;
+}
+
+.hero-video-radius {
+    border-radius: 0 0 306.5px 0;
+}
+
+.mySwiper {
+    width: 100%;
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+}
+
+.mySwiper1 {
+    width: 100%;
+    padding-top: 100px !important;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    max-width: 600px !important;
+    height: 100% !important;
+    /* box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25); */
+}
+
+@media screen and (max-width: 640px) {
+    .mySwiper .swiper-slide {
+        width: 300px !important;
+    }
+}
+
+.mySwiper .swiper-slide img {
+    display: block; 
+    width: 100%;
+}

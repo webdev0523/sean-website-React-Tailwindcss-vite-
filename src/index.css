@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Outfit";
+    font-style: normal;
+    /* font-weight: 400; */
+    font-display: swap;
+    src: url(./assets/fonts/Outfit-VariableFont_wght.ttf) format("woff2");
+  }
+
+  @font-face {
+    font-family: "Neuething";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(./assets/fonts/NeuethingVariableTest-BlackSemiExpanded-BF64bf225e1174b.otf)
+      format("woff2");
+  }
+
+
+  @font-face {
+    font-family: "Axiforma";
+    font-style: normal;
+    /* font-weight: 300; */
+    font-display: swap;
+    src: url(./assets/fonts/Kastelov_Axiforma_Light.otf)
+      format("woff2");
+  }
+}
