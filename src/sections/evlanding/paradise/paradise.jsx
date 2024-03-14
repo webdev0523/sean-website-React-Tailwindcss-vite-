@@ -75,7 +75,7 @@ export default function Paradise() {
                       id="myVideo"
                       src={video1}
                       onLoadStart={() => console.log("start")}
-                      onEnded={() => console.log("ended")}
+                      onEnded={() => SetIsPlay(false)}
                       onLoadedData={(data) => console.log("loaded", data)}
                     />
                 }

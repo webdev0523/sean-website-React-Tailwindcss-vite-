@@ -30,6 +30,7 @@ export default function Videos({ videoId, videoContent, videoPreview }) {
                         <video
                             id={"myVideo" + videoId}
                             src={videoContent}
+                            onEnded={() => SetIsPlay(false)}
                             className="rounded-3xl w-full h-full"
                         />
                 }
