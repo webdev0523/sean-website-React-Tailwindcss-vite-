@@ -82,11 +82,14 @@ export default function Paradise() {
                         onLoadedData={(data) => SetIsLoading(false)}
                         className={isLoading ? "!invisible" : ""}
                       />
-                      {isLoading && <div className="absolute top-0 w-full h-full flex justify-center items-center">
-                        <ReactLoading type={"spin"} color={"black"} height={'100px'} width={'100px'} />
-                      </div>}
+                      {isLoading &&
+                        <div className="absolute top-0 rounded-l-full overflow-hidden bg-[#FF4C00]">
+                          <img src={videoImg} alt="videoImg" />
+                          <div className="absolute top-0 w-full h-full flex justify-center items-center">
+                            <ReactLoading type={"spin"} color={"black"} height={'100px'} width={'100px'} />
+                          </div>
+                        </div>}
                     </>
-
                 }
               </div>
 

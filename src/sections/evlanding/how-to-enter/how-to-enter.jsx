@@ -45,11 +45,13 @@ export default function HowToEnter() {
                     onEnded={() => SetIsPlay(false)}
                     className={isLoading ? "!invisible w-full" : "w-full"}
                   />
-                  {isLoading && <div className="absolute top-0 w-full h-full flex justify-center items-center">
-                    <ReactLoading type={"spin"} color={"black"} height={'100px'} width={'100px'} />
+                  {isLoading && <div className="absolute top-0 rounded-l-full overflow-hidden bg-[#FF4C00]">
+                    <img src={videoimg} alt="videoimg" className="w-full" />
+                    <div className="absolute top-0 w-full h-full flex justify-center items-center">
+                      <ReactLoading type={"spin"} color={"black"} height={'100px'} width={'100px'} />
+                    </div>
                   </div>}
                 </>
-
             }
 
           </div>
