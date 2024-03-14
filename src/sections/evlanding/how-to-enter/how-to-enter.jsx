@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import ReactLoading from 'react-loading';
 
 import lines from "../../../assets/howtoenter/lines.png";
 import videoimg from "../../../assets/howtoenter/videoimg.png";
@@ -7,6 +8,7 @@ import video1 from "../../../assets/videos/1.mp4";
 
 export default function HowToEnter() {
   const [isPlay, SetIsPlay] = useState(false)
+  const [isLoading, SetIsLoading] = useState(false)
 
   useEffect(() => {
     try {
@@ -34,13 +36,20 @@ export default function HowToEnter() {
               !isPlay ?
                 <img src={videoimg} alt="videoimg" className="w-full" />
                 :
-                <video
-                  id="myVideo1"
-                  src={video1}
-                  onLoadStart={() => console.log("start")}
-                  onEnded={() => SetIsPlay(false)}
-                  className="w-full"
-                />
+                <>
+                  <video
+                    id="myVideo1"
+                    src={video1}
+                    onLoadStart={() => SetIsLoading(true)}
+                    onLoadedData={(data) => SetIsLoading(false)}
+                    onEnded={() => SetIsPlay(false)}
+                    className={isLoading ? "!invisible w-full" : "w-full"}
+                  />
+                  {isLoading && <div className="absolute top-0 w-full h-full flex justify-center items-center">
+                    <ReactLoading type={"spin"} color={"black"} height={'100px'} width={'100px'} />
+                  </div>}
+                </>
+
             }
 
           </div>

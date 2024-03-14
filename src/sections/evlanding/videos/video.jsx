@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react'
-
+import ReactLoading from 'react-loading';
 
 import video1 from "../../../assets/videos/video1.png";
 // import video1 from "../../../assets/videos/1.mp4";
 
 export default function Videos({ videoId, videoContent, videoPreview }) {
     const [isPlay, SetIsPlay] = useState(false)
+    const [isLoading, SetIsLoading] = useState(false)
 
     useEffect(() => {
         try {
@@ -25,14 +26,22 @@ export default function Videos({ videoId, videoContent, videoPreview }) {
             <div >
                 {
                     !isPlay ?
-                        <img src={videoPreview} alt="videoimg" className='w-full h-full rounded-3xl'  />
+                        <img src={videoPreview} alt="videoimg" className='w-full h-full rounded-3xl' />
                         :
-                        <video
-                            id={"myVideo" + videoId}
-                            src={videoContent}
-                            onEnded={() => SetIsPlay(false)}
-                            className="rounded-3xl w-full h-full"
-                        />
+                        <>
+                            <video
+                                id={"myVideo" + videoId}
+                                src={videoContent}
+                                onLoadStart={() => SetIsLoading(true)}
+                                onLoadedData={(data) => SetIsLoading(false)}
+                                onEnded={() => SetIsPlay(false)}
+                                className={isLoading ? "!invisible rounded-3xl w-full h-full" : "rounded-3xl w-full h-full"}
+                            />
+                            {isLoading && <div className="absolute top-0 w-full h-full flex justify-center items-center">
+                                <ReactLoading type={"spin"} color={"black"} height={'100px'} width={'100px'} />
+                            </div>}
+                        </>
+
                 }
             </div>
 

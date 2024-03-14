@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 
+import ReactLoading from 'react-loading';
 
 import linesR from "../../../assets/paradise/Union (2).png";
 import linesL from "../../../assets/paradise/Union (3).png";
@@ -13,6 +14,7 @@ import WinA from "./winA";
 
 export default function Paradise() {
   const [isPlay, SetIsPlay] = useState(false)
+  const [isLoading, SetIsLoading] = useState(false)
 
   useEffect(() => {
     try {
@@ -66,18 +68,25 @@ export default function Paradise() {
         <div className="basis-1/2 flex justify-end mt-[200px]">
           <div>
             <div className="relative z-[1000]">
-              <div className="rounded-l-full overflow-hidden bg-[#FF4C00]" style={{ paddingBottom: 10 }}>
+              <div className=" rounded-l-full overflow-hidden bg-[#FF4C00]" style={{ paddingBottom: 10 }}>
                 {
                   !isPlay ?
                     <img src={videoImg} alt="videoImg" />
                     :
-                    <video
-                      id="myVideo"
-                      src={video1}
-                      onLoadStart={() => console.log("start")}
-                      onEnded={() => SetIsPlay(false)}
-                      onLoadedData={(data) => console.log("loaded", data)}
-                    />
+                    <>
+                      <video
+                        id="myVideo"
+                        src={video1}
+                        onLoadStart={() => SetIsLoading(true)}
+                        onEnded={() => SetIsPlay(false)}
+                        onLoadedData={(data) => SetIsLoading(false)}
+                        className={isLoading ? "!invisible" : ""}
+                      />
+                      {isLoading && <div className="absolute top-0 w-full h-full flex justify-center items-center">
+                        <ReactLoading type={"spin"} color={"black"} height={'100px'} width={'100px'} />
+                      </div>}
+                    </>
+
                 }
               </div>
 
