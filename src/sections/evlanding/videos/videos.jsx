@@ -79,13 +79,11 @@ export default function Videos() {
               translate: ["-102%", 0, 0],
               rotate: [0, 0, -5.37],
               origin: "right bottom",
-              shadow: true,
             },
             next: {
               translate: ["102%", 0, 0],
               rotate: [0, 0, 5.37],
               origin: "left bottom",
-              shadow: true,
             },
           }}
           aria-current={2}
