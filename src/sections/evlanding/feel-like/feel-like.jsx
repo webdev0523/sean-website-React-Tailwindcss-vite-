@@ -28,7 +28,7 @@ export default function FeelLike() {
   }, []);
 
   return (
-    <div className="md:p-0 p-5" ref={targetRef}>
+    <div className="" ref={targetRef}>
       <div className="flex justify-center my-[100px] relative max-md:my-12">
         <div className="relative">
           {/* <p className="text-5xl font-black z-[100] relative leading-[64px]"> */}
