@@ -17,9 +17,9 @@ export default function Paradise() {
   useEffect(() => {
     try {
       playVideo()
-    } catch (err) {console.log()}
+    } catch (err) { console.log() }
   }, [isPlay])
-  
+
   const playVideo = () => {
     const vid = document.getElementById("myVideo")
     vid.play()
@@ -69,11 +69,14 @@ export default function Paradise() {
               <div className="rounded-l-full overflow-hidden bg-[#FF4C00]" style={{ paddingBottom: 10 }}>
                 {
                   !isPlay ?
-                    <img src={videoImg} alt="videoImg"  /> 
+                    <img src={videoImg} alt="videoImg" />
                     :
                     <video
                       id="myVideo"
                       src={video1}
+                      onLoadStart={() => console.log("start")}
+                      onEnded={() => console.log("ended")}
+                      onLoadedData={(data) => console.log("loaded", data)}
                     />
                 }
               </div>
