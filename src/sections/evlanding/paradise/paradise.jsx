@@ -84,7 +84,7 @@ export default function Paradise() {
                       />
                       {isLoading &&
                         <div className="absolute top-0 rounded-l-full overflow-hidden bg-[#FF4C00]">
-                          <img src={videoImg} alt="videoImg" />
+                          <img src={videoImg} alt="videoImg" className="w-full h-full" />
                           <div className="absolute top-0 w-full h-full flex justify-center items-center">
                             <ReactLoading type={"spin"} color={"black"} height={'100px'} width={'100px'} />
                           </div>
