@@ -68,30 +68,29 @@ export default function Paradise() {
         <div className="basis-1/2 flex justify-end mt-[200px]">
           <div>
             <div className="relative z-[1000]">
-              <div className=" rounded-l-full overflow-hidden bg-[#FF4C00]" style={{ paddingBottom: 10 }}>
-                {
-                  !isPlay ?
-                    <img src={videoImg} alt="videoImg" />
-                    :
-                    <>
-                      <video
-                        id="myVideo"
-                        src={video1}
-                        onLoadStart={() => SetIsLoading(true)}
-                        onEnded={() => SetIsPlay(false)}
-                        onLoadedData={(data) => SetIsLoading(false)}
-                        className={isLoading ? "!invisible" : ""}
-                      />
-                      {isLoading &&
-                        <div className="absolute top-0 rounded-l-full overflow-hidden bg-[#FF4C00]">
-                          <img src={videoImg} alt="videoImg" className="w-full h-full" />
-                          <div className="absolute top-0 w-full h-full flex justify-center items-center">
-                            <ReactLoading type={"spin"} color={"black"} height={'100px'} width={'100px'} />
-                          </div>
-                        </div>}
-                    </>
-                }
-              </div>
+              {(!isPlay || isLoading) &&
+                <div className="top-0 rounded-l-full pb-3 overflow-hidden bg-[#FF4C00] ">
+                  <img src={videoImg} alt="videoImg" className="w-full h-full" />
+                  {isLoading &&
+                    <div className="absolute top-0 w-full h-full flex justify-center items-center">
+                      <ReactLoading type={"spin"} color={"black"} height={'100px'} width={'100px'} />
+                    </div>}
+                </div>}
+
+              {
+                isPlay &&
+                <div className={isLoading ? "!invisible" : "top-0 rounded-l-full pb-3 overflow-hidden bg-[#FF4C00]"}>
+                  <video
+                    id="myVideo"
+                    src={video1}
+                    onLoadStart={() => SetIsLoading(true)}
+                    onEnded={() => SetIsPlay(false)}
+                    onLoadedData={(data) => SetIsLoading(false)}
+                    className={isLoading ? "!invisible h-0" : ""}
+                  />
+                </div>
+              }
+
 
               {!isPlay && <div className="absolute top-0 w-full h-full flex justify-center items-center">
                 <button

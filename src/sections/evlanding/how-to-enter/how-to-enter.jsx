@@ -32,26 +32,25 @@ export default function HowToEnter() {
       <div className="">
         <div className="relative">
           <div>
-            {
-              !isPlay ?
+            {(!isPlay || isLoading) &&
+              <div>
                 <img src={videoimg} alt="videoimg" className="w-full" />
-                :
-                <>
-                  <video
-                    id="myVideo1"
-                    src={video1}
-                    onLoadStart={() => SetIsLoading(true)}
-                    onLoadedData={(data) => SetIsLoading(false)}
-                    onEnded={() => SetIsPlay(false)}
-                    className={isLoading ? "!invisible w-full" : "w-full"}
-                  />
-                  {isLoading && <div className="absolute top-0 overflow-hidden bg-[#FF4C00]">
-                    <img src={videoimg} alt="videoimg" className="w-full" />
-                    <div className="absolute top-0 w-full h-full flex justify-center items-center">
-                      <ReactLoading type={"spin"} color={"black"} height={'100px'} width={'100px'} />
-                    </div>
+                {isLoading &&
+                  <div className="absolute top-0 w-full h-full flex justify-center items-center">
+                    <ReactLoading type={"spin"} color={"black"} height={'100px'} width={'100px'} />
                   </div>}
-                </>
+              </div>}
+
+            {
+              isPlay &&
+              <video
+                id="myVideo1"
+                src={video1}
+                onLoadStart={() => SetIsLoading(true)}
+                onEnded={() => SetIsPlay(false)}
+                onLoadedData={(data) => SetIsLoading(false)}
+                className={isLoading ? "!invisible h-0" : "w-full"}
+              />
             }
 
           </div>

@@ -24,27 +24,25 @@ export default function Videos({ videoId, videoContent, videoPreview }) {
     return (
         <div className="flex justify-center relative rounded-3xl" >
             <div >
-                {
-                    !isPlay ?
-                        <img src={videoPreview} alt="videoimg" className='w-full h-full rounded-3xl' />
-                        :
-                        <>
-                            <video
-                                id={"myVideo" + videoId}
-                                src={videoContent}
-                                onLoadStart={() => SetIsLoading(true)}
-                                onLoadedData={(data) => SetIsLoading(false)}
-                                onEnded={() => SetIsPlay(false)}
-                                className={isLoading ? "!invisible rounded-3xl w-full h-full" : "rounded-3xl w-full h-full"}
-                            />
-                            {isLoading && <div className="absolute top-0 overflow-hidden]">
-                                <img src={videoPreview} alt="videoimg" className='w-full h-full rounded-3xl' />
-                                <div className="absolute top-0 w-full h-full flex justify-center items-center">
-                                    <ReactLoading type={"spin"} color={"black"} height={'100px'} width={'100px'} />
-                                </div>
+                {(!isPlay || isLoading) &&
+                    <div>
+                        <img src={videoPreview} alt="videoPreview" className="w-full h-full rounded-3xl" />
+                        {isLoading &&
+                            <div className="absolute top-0 w-full h-full flex justify-center items-center">
+                                <ReactLoading type={"spin"} color={"black"} height={'100px'} width={'100px'} />
                             </div>}
-                        </>
+                    </div>}
 
+                {
+                    isPlay &&
+                    <video
+                        id={"myVideo" + videoId}
+                        src={videoContent}
+                        onLoadStart={() => SetIsLoading(true)}
+                        onLoadedData={(data) => SetIsLoading(false)}
+                        onEnded={() => SetIsPlay(false)}
+                        className={isLoading ? "!invisible h-0" : "rounded-3xl w-full h-full"}
+                    />
                 }
             </div>
 
