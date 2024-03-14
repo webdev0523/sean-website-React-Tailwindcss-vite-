@@ -4,18 +4,23 @@ import spark from "../../../assets/paradise/spark.png";
 import isuzu from "../../../assets/paradise/isuzu.png";
 import tesla from "../../../assets/paradise/tesla.png";
 import cash from "../../../assets/paradise/cash.png";
+import wina from "../../../assets/paradise/wina.png";
+import toplines from "../../../assets/paradise/toplines.png";
 import curvearrow from "./curvearrow.svg";
 import curvearrow2 from "./curvearrow2.svg";
 
 const WinA = ({ property, className, style }) => {
   return (
-    <div className="bg-center bg-[url('/paradise_bg.png')] bg-no-repeat w-full mb-0 lg:mb-[100px] relative px-5">
+    <div className="w-full mb-0 relative px-5">
+      {/* <div className="bg-center bg-[url('/paradise_bg.png')] bg-no-repeat w-full mb-0 lg:mb-[100px] relative px-5"> */}
+      <img src={wina} alt="wina" className="absolute top-0 left-0 w-full z-[-1]" />
+      <img src={toplines} alt="toplines" className="absolute bottom-[-400px] right-0 z-[-1]" />
       <div className="text-center p-24">
         <p className="font-['Neuething'] text-[#FF6B00] font-black lg:text-7xl text-4xl z-[1000] relative ">
           Win A
         </p>
       </div>
-      <div className="absolute top-0 left-0 right-0 z-[-1]">
+      <div className="absolute left-0 top-0 right-0 z-[-1]">
         <img src={spark} alt="spark" className="w-full" />
       </div>
 
@@ -31,7 +36,7 @@ const WinA = ({ property, className, style }) => {
             <p className="font-['Neuething'] text-4xl font-black mt-4 drop-shadow-[2px_-2px_0px_rgba(255,255,255)]">
               Tesla Model Y
             </p>
-            <div className="bg-[#FF4C00] w-[126px] h-[126px] rounded-full absolute top-0 left-0 z-[-1]"></div>
+            <div className="bg-[#FF4C00A0] w-[126px] h-[126px] rounded-full absolute top-0 left-0 z-[-1]"></div>
           </div>
         </div>
 
@@ -54,7 +59,7 @@ const WinA = ({ property, className, style }) => {
             <p className="font-['Neuething'] text-4xl mt-4 drop-shadow-[2px_-2px_0px_rgba(255,255,255)]  font-black ">
               Isuzu DMax
             </p>
-            <div className="bg-[#56E6E6] w-[126px] h-[126px] rounded-full absolute top-0 right-[50px] z-[-1]"></div>
+            <div className="bg-[#56E6E6A0] w-[126px] h-[126px] rounded-full absolute top-0 right-[50px] z-[-1]"></div>
           </div>
         </div>
 
@@ -77,7 +82,7 @@ const WinA = ({ property, className, style }) => {
             <p className="font-['Neuething'] font-black text-4xl mt-4 drop-shadow-[2px_-2px_0px_rgba(255,255,255)] ">
               USD CASH
             </p>
-            <div className="bg-[#74E486] w-[126px] h-[126px] rounded-full absolute top-0 left-[50px] z-[-1]"></div>
+            <div className="bg-[#74E486EE] w-[126px] h-[126px] rounded-full absolute top-0 left-[50px] z-[-1]"></div>
           </div>
         </div>
       </div>
