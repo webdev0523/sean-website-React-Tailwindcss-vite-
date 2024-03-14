@@ -104,3 +104,46 @@
     position: relative;
 
 } */
+
+.scrolling-text-container {
+    overflow: hidden;
+    /* Ensures the text is clipped within the container */
+}
+
+.scrolling-text-left {
+    white-space: nowrap;
+    /* Prevents wrapping of the text */
+    animation: scroll-left 20s linear infinite;
+    /* Adjust duration and timing function as needed */
+}
+
+.scrolling-text-right {
+    white-space: nowrap;
+    /* Prevents wrapping of the text */
+    animation: scroll-right 20s linear infinite;
+    /* Adjust duration and timing function as needed */
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+        /* Start from the right side */
+    }
+
+    100% {
+        transform: translateX(-100%);
+        /* Move to the left side */
+    }
+}
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-100%);
+        /* Start from the right side */
+    }
+
+    100% {
+        transform: translateX(100%);
+        /* Move to the left side */
+    }
+}
