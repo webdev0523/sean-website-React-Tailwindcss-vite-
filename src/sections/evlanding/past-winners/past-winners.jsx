@@ -29,9 +29,18 @@ const winners = [
   { url: winner3 },
   { url: winner4 },
   { url: winner5 },
-  // { url: winner6 },
+  { url: winner6 },
+];
+
+const winners1 = [
+  { url: winner1 },
+  { url: winner2 },
+  { url: winner3 },
+  { url: winner4 },
+  { url: winner5 },
+  { url: winner6 },
   { url: winner7 },
-  // { url: winner8 },
+  { url: winner8 },
 ];
 
 export default function PastWinners() {
@@ -86,13 +95,24 @@ export default function PastWinners() {
 
       {/* grid-cols-1 sm:grid-cols-2 md: */}
       <div
-        className={`grid grid-cols-3 gap-4 max-w-[1200px] mx-auto duration-[2000ms] relative max-md:grid-cols-4 max-md:gap-1 md:p-4 ${isIntersecting ? "opacity-1" : "opacity-0"
+        className={`max-md:!display-none grid grid-cols-3 gap-4 max-w-[1200px] mx-auto duration-[2000ms] relative max-md:grid-cols-4 max-md:gap-1 md:p-4 ${isIntersecting ? "opacity-1" : "opacity-0"
           }`}
       >
         {winners.map((w, index) => (
           <Winnder key={index} data={w} />
         ))}
       </div>
+
+      {/* mobile responsive */}
+      <div
+        className={`md:!display-none grid grid-cols-3 gap-4 max-w-[1200px] mx-auto duration-[2000ms] relative max-md:grid-cols-4 max-md:gap-1 md:p-4 ${isIntersecting ? "opacity-1" : "opacity-0"
+          }`}
+      >
+        {winners1.map((w, index) => (
+          <Winnder key={index} data={w} />
+        ))}
+      </div>
+      {/* end mobile responsive */}
 
       <img
         className="absolute bottom-0 right-0 w-[50vw] z-[-1] translate-y-1/2"
