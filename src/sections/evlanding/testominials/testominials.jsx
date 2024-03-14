@@ -66,7 +66,7 @@ export default function Testominials() {
         </div>
       </div>
 
-      <div className="min-[780px]:p-8 max-[780px]:mt-8 flex justify-center pb-0 mb-0">
+      <div className="min-[780px]:p-8 max-[780px]:mt-8 flex justify-center pb-0 mb-0 overflow-auto">
         <Swiper
           // direction={"vertical"}
           effect={"creative"}
@@ -93,7 +93,7 @@ export default function Testominials() {
           className="mySwiper1"
           onSwiper={(swiper) => setSwiperInstance(swiper)}
         >
-          <div>
+          <div className="max-w-[500px] overflow-hidden">
             {cards.map((card, i) => (
               <SwiperSlide key={card.id} className="">
                 <div className="p-8 bg-[#ECF6F8EB] rounded-2xl max-w-[668px] relative drop-shadow-3xl">
