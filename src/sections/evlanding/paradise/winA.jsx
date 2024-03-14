@@ -9,7 +9,7 @@ import curvearrow2 from "./curvearrow2.svg";
 
 const WinA = ({ property, className, style }) => {
   return (
-    <div className="bg-center bg-[url('/paradise_bg.png')] bg-no-repeat w-full mb-0 lg:mb-[100px] z-[-100] relative px-5">
+    <div className="bg-center bg-[url('/paradise_bg.png')] bg-no-repeat w-full mb-0 lg:mb-[100px] relative px-5">
       <div className="text-center p-24">
         <p className="font-['Neuething'] text-[#FF6B00] font-black lg:text-7xl text-4xl z-[1000] relative ">
           Win A
@@ -21,7 +21,7 @@ const WinA = ({ property, className, style }) => {
 
       <div className="flex lg:flex-row flex-col justify-center items-center">
         <div className="flex flex-col justify-center items-center">
-          <div className=" flex justify-center items-center rounded-full bg-[#F5F5F5] w-[300px] h-[300px] border-dashed border-2 border-[#B5B5B5]">
+          <div className=" flex justify-center items-center rounded-full bg-[#F5F5F5] w-[300px] h-[300px] border-dashed border-2 border-[#B5B5B5] hover:scale-105 transition-all">
             <img src={tesla} alt="tesla" />
           </div>
           <div className="text-center relative mt-16 origin-bottom -rotate-[2.54deg]">
@@ -44,7 +44,7 @@ const WinA = ({ property, className, style }) => {
         </div>
 
         <div className="flex flex-col justify-center items-center">
-          <div className=" flex justify-center items-center rounded-full bg-[#F5F5F5] w-[300px] h-[300px] border-dashed border-2 border-[#B5B5B5] mt-24">
+          <div className=" flex justify-center items-center rounded-full bg-[#F5F5F5] w-[300px] h-[300px] border-dashed border-2 border-[#B5B5B5] mt-24 hover:scale-105 transition-all">
             <img src={isuzu} alt="isuzu" />
           </div>
           <div className="text-center mt-16 relative origin-bottom -rotate-[2.54deg]">
@@ -67,7 +67,7 @@ const WinA = ({ property, className, style }) => {
         </div>
 
         <div className="flex flex-col justify-center items-center max-[1024px]:mt-48">
-          <div className=" flex justify-center items-center rounded-full bg-[#F5F5F5] w-[300px] h-[300px] border-dashed border-2 border-[#B5B5B5]">
+          <div className=" flex justify-center items-center rounded-full bg-[#F5F5F5] w-[300px] h-[300px] border-dashed border-2 border-[#B5B5B5] hover:scale-105 transition-all">
             <img src={cash} alt="cash" />
           </div>
           <div className="text-center mt-16 relative origin-bottom -rotate-[2.54deg]">
