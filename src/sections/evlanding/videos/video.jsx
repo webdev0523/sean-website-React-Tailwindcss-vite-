@@ -37,7 +37,7 @@ export default function Videos({ videoId, videoContent, videoPreview }) {
                                 onEnded={() => SetIsPlay(false)}
                                 className={isLoading ? "!invisible rounded-3xl w-full h-full" : "rounded-3xl w-full h-full"}
                             />
-                            {isLoading && <div className="absolute top-0 rounded-l-full overflow-hidden bg-[#FF4C00]">
+                            {isLoading && <div className="absolute top-0 overflow-hidden bg-[#FF4C00]">
                                 <img src={videoPreview} alt="videoimg" className='w-full h-full rounded-3xl' />
                                 <div className="absolute top-0 w-full h-full flex justify-center items-center">
                                     <ReactLoading type={"spin"} color={"black"} height={'100px'} width={'100px'} />
