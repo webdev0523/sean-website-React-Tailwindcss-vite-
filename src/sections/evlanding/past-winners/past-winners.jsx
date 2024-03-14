@@ -21,6 +21,7 @@ import bgman from "../../../assets/pastwinners/bg.png";
 import linesL from "../../../assets/pastwinners/linesL.png";
 import linesR from "../../../assets/pastwinners/linesR.png";
 import lines from "../../../assets/pastwinners/lines.svg";
+import Icon4 from "../../../components/icons/icon4";
 
 const winners = [
   { url: winner1 },
@@ -46,7 +47,10 @@ export default function PastWinners() {
 
   return (
     <div ref={targetRef} className="md:p-0 p-8 relative">
-      <div className="flex justify-center my-[100px] relative">
+      <div className="flex justify-center mt-[200px] max-md:my-10">
+        <Icon4 />
+      </div>
+      <div className="flex justify-center my-[100px] max-md:mt-0 relative">
         <div className="relative">
           {/* <p className="text-5xl font-black z-[100] relative leading-[64px]"> */}
           <Title
@@ -54,11 +58,14 @@ export default function PastWinners() {
             className="origin-bottom -rotate-[2.54deg]"
           />
           {/* </p> */}
-          <img
+          {/* <img
             src={curve}
             alt="curve"
             className="absolute right-0 top-7 md:w-[347px]"
-          />
+          /> */}
+          <div className="absolute right-0 top-7 w-full flex justify-end">
+            <img src={curve} alt="curve" className="max-md:w-[167px] " />
+          </div>
         </div>
 
         <img
@@ -68,7 +75,7 @@ export default function PastWinners() {
         <img
           src={bgman}
           alt="bgman"
-          className="absolute bottom-[-200px] right-0 z-[-1]"
+          className="absolute bottom-[-200px]  right-0 z-[-1] max-md:bottom-[-100px]  max-md:mr-[-100px]"
         />
         <img
           src={linesR}
@@ -77,10 +84,10 @@ export default function PastWinners() {
         />
       </div>
 
+      {/* grid-cols-1 sm:grid-cols-2 md: */}
       <div
-        className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-[1200px] mx-auto duration-[2000ms] relative ${
-          isIntersecting ? "opacity-1" : "opacity-0"
-        }`}
+        className={`grid grid-cols-3 gap-4 max-w-[1200px] mx-auto duration-[2000ms] relative max-md:grid-cols-4 max-md:gap-1 md:p-4 ${isIntersecting ? "opacity-1" : "opacity-0"
+          }`}
       >
         {winners.map((w, index) => (
           <Winnder key={index} data={w} />

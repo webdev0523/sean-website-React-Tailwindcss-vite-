@@ -23,24 +23,27 @@ const Winlads = [
 export default function WhatIsWinlads() {
   return (
     <div className="relative">
-      <div className="flex justify-center my-[60px] md:my-[100px]">
+      <div className="flex justify-center my-[60px] max-md:mt-0 md:my-[100px]">
         <div className="relative">
           {/* <p className="text-5xl font-black z-[100] relative leading-[64px]"> */}
           <Title
             label="What Is Winlads"
-            className="origin-bottom -rotate-[2.54deg]"
+            className="origin-bottom -rotate-[2.54deg] max-md:text-2xl max-md:font-black"
           />
           {/* </p> */}
-          <img
+          {/* <img
             src={curve}
             alt="curve"
             className="absolute right-0 top-7 md:w-[347px]"
-          />
+          /> */}
+          <div className="absolute right-0 top-7 max-md:top-4 w-full flex justify-end">
+            <img src={curve} alt="curve" className="max-md:w-[167px] " />
+          </div>
         </div>
       </div>
 
       <div className="px-0 md:px-10 mx-10 mt-10">
-        <p className="font-Outfit text-[22px] text-center capitalize">
+        <p className="font-Outfit text-[22px] text-center capitalize max-md:text-sm max-md:font-light max-md:leading-5">
           Everyone from driftworks was super helpful. i’ve heard this before
           from many people and that’s why i decided to buy through them! i
           ordered Stanceparts aircups for my car and they arrived damaged. UPS

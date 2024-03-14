@@ -59,12 +59,12 @@ export default function Videos() {
 
   return (
     <div className="mb-20">
-      <div className="flex justify-center my-[100px] relative">
+      <div className="flex justify-center my-[100px] max-md:my-14 relative">
         <div className="relative ">
           {/* <p className="text-5xl font-black z-[100] relative leading-[64px]"> */}
-          <Title label="Videos" className="origin-bottom -rotate-[2.54deg]" />
+          <Title label="Videos" className="origin-bottom -rotate-[2.54deg] max-md:text-4xl" />
           {/* </p> */}
-          <img src={curve} alt="curve" className="absolute right-0 top-10" />
+          <img src={curve} alt="curve" className="absolute right-0 top-10 max-md:top-5" />
         </div>
       </div>
 
