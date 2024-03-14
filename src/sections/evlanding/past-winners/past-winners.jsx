@@ -5,9 +5,7 @@ import Winnder from "./winner";
 
 import useInteractionObserver from "../../../hooks/use-interaction-observer";
 
-import bgImg from "../../../assets/images/Union.png";
 import bgImg1 from "../../../assets/images/Union (1).png";
-
 import winner1 from "../../../assets/images/Rectangle 34624628.jpg";
 import winner2 from "../../../assets/images/Rectangle 34624629.jpg";
 import winner3 from "../../../assets/images/Rectangle 34624630.jpg";
@@ -61,17 +59,10 @@ export default function PastWinners() {
       </div>
       <div className="flex justify-center my-[100px] max-md:mt-0 relative">
         <div className="relative">
-          {/* <p className="text-5xl font-black z-[100] relative leading-[64px]"> */}
           <Title
             label="Past winners"
             className="origin-bottom -rotate-[2.54deg]"
           />
-          {/* </p> */}
-          {/* <img
-            src={curve}
-            alt="curve"
-            className="absolute right-0 top-7 md:w-[347px]"
-          /> */}
           <div className="absolute right-0 top-7 w-full flex justify-end">
             <img src={curve} alt="curve" className="max-md:w-[167px] " />
           </div>

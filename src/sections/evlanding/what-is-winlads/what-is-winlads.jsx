@@ -1,7 +1,5 @@
 import React from "react";
-import ImgPanel from "./ImgPanel";
 import Title from "../../../components/title";
-import Panel from "./panel";
 
 import img1 from "../../../assets/images/1.jpg";
 import img2 from "../../../assets/images/2.jpg";
@@ -25,17 +23,10 @@ export default function WhatIsWinlads() {
     <div className="relative">
       <div className="flex justify-center my-[60px] max-md:mt-0 md:my-[100px]">
         <div className="relative">
-          {/* <p className="text-5xl font-black z-[100] relative leading-[64px]"> */}
           <Title
             label="What Is Winlads"
             className="origin-bottom -rotate-[2.54deg] max-md:text-2xl max-md:font-black"
           />
-          {/* </p> */}
-          {/* <img
-            src={curve}
-            alt="curve"
-            className="absolute right-0 top-7 md:w-[347px]"
-          /> */}
           <div className="absolute right-0 top-7 max-md:top-4 w-full flex justify-end">
             <img src={curve} alt="curve" className="max-md:w-[167px] " />
           </div>
