@@ -37,6 +37,8 @@ export default function HowToEnter() {
                 <video
                   id="myVideo1"
                   src={video1}
+                  onLoadStart={() => console.log("start")}
+                  onEnded={() => console.log("ended")}
                   className="w-full"
                 />
             }

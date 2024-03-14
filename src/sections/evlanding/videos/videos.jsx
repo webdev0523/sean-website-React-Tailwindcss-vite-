@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, Suspense } from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -15,8 +15,11 @@ import curve from "../../../assets/subscription/curve.png";
 import men2 from "../../../assets/videos/video1.png";
 import car1 from "../../../assets/videos/car1.png";
 import car2 from "../../../assets/videos/car2.png";
+// import video1 from "../../../assets/videos/1.mp4";
 import video1 from "../../../assets/videos/1.mp4";
-import Video from "./video"
+
+const Video = React.lazy(() => import("./video"));
+// import Video from "./video"
 
 const videos = [
   {
@@ -52,7 +55,7 @@ const videos = [
 ];
 
 export default function Videos() {
-  
+
 
   return (
     <div className="mb-20">
@@ -93,7 +96,9 @@ export default function Videos() {
         >
           {videos.map((video, index) => (
             <SwiperSlide key={index}>
-              <Video videoId={video.id} videoContent={video.content} videoPreview={video.preview} />
+              <Suspense fallback={<div>Loading</div>}>
+                <Video videoId={video.id} videoContent={video.content} videoPreview={video.preview} />
+              </Suspense>
             </SwiperSlide>
           ))}
         </Swiper>
