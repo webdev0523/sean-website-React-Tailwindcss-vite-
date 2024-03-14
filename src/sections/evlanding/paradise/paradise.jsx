@@ -32,14 +32,14 @@ export default function Paradise() {
 
       <div className="relative pb-1 origin-bottom -rotate-[2.54deg]">
         <div className="h-[70px] w-full flex items-center">
-          <marquee behavior="scroll" direction="right" className="text-black font-['Neuething'] text-2xl font-extrabold drop-shadow-[2px_-2px_0px_rgba(255,255,255)]">TESLA Y | GIVEAWAY | ISUZU DMAX | GIVEAWAY | 50000CASH | GIVEAWAY | ISUZU DMAX | GIVEAWAY</marquee>
+          <marquee behavior="scroll" direction="right" className="text-black font-['Neuething'] text-2xl font-extrabold drop-shadow-[2px_-2px_0px_rgba(255,255,255)]">TESLA Y | GIVEAWAY | ISUZU DMAX | GIVEAWAY | 50000$ CASH | GIVEAWAY | ISUZU DMAX | GIVEAWAY</marquee>
         </div>
         <div className="bg-[#56DFE6] absolute h-[70px] w-full left-0 right-0 top-0 -z-10" />
       </div>
 
       <div className="relative origin-bottom -rotate-[2.54deg]">
         <div className="h-[70px] w-full flex items-center">
-          <marquee behavior="scroll" direction="left" className="text-white font-['Neuething'] text-2xl font-extrabold drop-shadow-[1px_-1px_0px_rgba(255,255,255)]">TESLA Y | GIVEAWAY | ISUZU DMAX | GIVEAWAY | 50000CASH | GIVEAWAY | ISUZU DMAX | GIVEAWAY </marquee>
+          <marquee behavior="scroll" direction="left" className="text-white font-['Neuething'] text-2xl font-extrabold drop-shadow-[1px_-1px_0px_rgba(255,255,255)]">TESLA Y | GIVEAWAY | ISUZU DMAX | GIVEAWAY | 50000$ CASH | GIVEAWAY | ISUZU DMAX | GIVEAWAY </marquee>
         </div>
         <div className="bg-[#FF4C00] absolute h-[70px] w-full left-0 right-0 top-0 -z-10" ></div>
       </div>
@@ -61,7 +61,7 @@ export default function Paradise() {
           <p className="font-light text-xl leading-8 max-md:leading-5 text-justify capitalize max-lg:text-center">
             Buckle up for the chance of a lifetime, where luxury, power, and financial freedom wait for ONE lucky winner. And here's the twist – if neither car suits your style, you have the option to take home the incredible cash prize. Don't let this opportunity slip away; make 2024 your best year yet!
           </p>
-          <button className="w-full p-6 bg-[#56E6E6] rounded-full border border-black font-bold text-xl mt-[75px] relative z-[100]  hover:opacity-80"><span className="drop-shadow-[3px_-4px_0px_rgba(255,255,255)]">ENTER NOW</span></button>
+          <button className="w-full p-6 bg-[#56E6E6] rounded-full border border-black font-bold text-xl mt-[75px] relative z-[100]  hover:opacity-80"><span className="drop-shadow-[1px_-1px_0px_rgba(255,255,255)]">ENTER NOW</span></button>
 
         </div>
 
