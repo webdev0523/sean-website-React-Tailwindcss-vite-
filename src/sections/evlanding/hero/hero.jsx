@@ -7,6 +7,7 @@ import car2 from "../../../assets/hero/image 179.png";
 import tape from "../../../assets/hero/Group.png";
 import lines from "../../../assets/hero/Union.png";
 import vector from "../../../assets/hero/Vector.svg";
+import { Timer1 } from "../../../components/Timer1";
 
 export default function Hero() {
   const deadline = new Date("2/23/2025");
@@ -19,23 +20,8 @@ export default function Hero() {
         <div className="flex max-[700px]:justify-center">
           <img src={logo} alt="logo" className="w-[160px] h-[30px]" />
         </div>
-        <div className="flex justify-evenly items-center bg-black rounded-full md:min-w-[312px] h-[62px] max-[700px]:mt-8">
-          <div className="text-center">
-            <p className="font-['Neuething] text-3xl font-semibold text-white">18</p>
-            <p className="font-['Neuething] text-[6px] font-medium text-white">DAYS</p>
-          </div>
-          <div className="text-center">
-            <p className="font-['Neuething] text-3xl font-semibold text-white">45</p>
-            <p className="font-['Neuething] text-[6px] font-medium text-white">HOURS</p>
-          </div>
-          <div className="text-center">
-            <p className="font-['Neuething] text-3xl font-semibold text-white">27</p>
-            <p className="font-['Neuething] text-[6px] font-medium text-white">MINUTES</p>
-          </div>
-          <div className="text-center">
-            <p className="font-['Neuething] text-3xl font-semibold text-white">36</p>
-            <p className="font-['Neuething] text-[6px] font-medium text-white">SECONDS</p>
-          </div>
+        <div>
+          <Timer1 deadline={deadline} />
         </div>
       </div>
 

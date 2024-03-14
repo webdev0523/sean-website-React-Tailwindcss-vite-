@@ -15,6 +15,9 @@ export default function Hero() {
     <div className="bg-[url('/hero/Mask_group.png')] bg-center bg-no-repeat bg-cover bg-[length:100%_100%] relative">
       <img src={lines} alt="lines" className="absolute top-0 left-0" />
 
+      <div>
+        
+      </div>
       <div className="flex justify-between p-[78px]">
         <img src={logo} alt="logo" className="w-[160px] h-[30px]" />
         <div className="flex justify-evenly items-center bg-black rounded-full w-[312px] h-[62px]">
