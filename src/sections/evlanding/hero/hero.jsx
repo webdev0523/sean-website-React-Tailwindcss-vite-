@@ -66,7 +66,7 @@ export default function Hero() {
         {/*  */}
         <div className="flex justify-center">
           <div>
-            <img src={car1} alt="car1" />
+            <img src={car1} alt="car1" className="car1" />
             <img src={car2} alt="car2" className="md:mt-[-74px]" />
           </div>
         </div>

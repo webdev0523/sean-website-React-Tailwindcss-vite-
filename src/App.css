@@ -47,8 +47,37 @@
     }
 }
 
-.mySwiper .swiper-slide img, .mySwiper .swiper-slide video {
-    display: block; 
+.mySwiper .swiper-slide img,
+.mySwiper .swiper-slide video {
+    display: block;
     width: 100%;
 }
 
+@keyframes appear {
+    0% {
+        opacity: 0,
+    }
+
+    25% {
+        opacity: 0.25
+    }
+
+    50% {
+        opacity: 0.5
+    }
+
+    75% {
+        opacity: 0.75
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+.car1 {
+    animation-name: appear;
+    animation-duration: 20s;
+    position: relative;
+    
+}

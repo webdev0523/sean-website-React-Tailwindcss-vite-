@@ -42,10 +42,10 @@ export default function FeelLike() {
           />
         </div>
 
-        <img
+        {/* <img
           className="absolute top-0 left-0 right-0 z-[-1] -translate-y-1/2 w-full"
           src={bgImg}
-        />
+        /> */}
         {/*         
         <div className="a">
           <img src={bgImg} />
