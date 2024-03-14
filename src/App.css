@@ -34,8 +34,8 @@
 }
 
 .swiper-slide {
-    background-position: center;
-    background-size: cover;
+    /* background-position: center;
+    background-size: cover; */
     max-width: 600px !important;
     height: 100% !important;
     /* box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25); */
@@ -47,7 +47,7 @@
     }
 }
 
-.mySwiper .swiper-slide img {
+.mySwiper .swiper-slide img, .mySwiper .swiper-slide video {
     display: block; 
     width: 100%;
 }

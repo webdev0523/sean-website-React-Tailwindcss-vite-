@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react'
 import video1 from "../../../assets/videos/video1.png";
 // import video1 from "../../../assets/videos/1.mp4";
 
-export default function Videos({ videoId, videoContent }) {
+export default function Videos({ videoId, videoContent, videoPreview }) {
     const [isPlay, SetIsPlay] = useState(false)
 
     useEffect(() => {
@@ -21,11 +21,11 @@ export default function Videos({ videoId, videoContent }) {
     }
 
     return (
-        <div className="flex justify-center relative rounded-xl" >
-            <div>
+        <div className="flex justify-center relative rounded-3xl" >
+            <div >
                 {
                     !isPlay ?
-                        <img src={video1} alt="videoimg" />
+                        <img src={videoPreview} alt="videoimg" className='w-full h-full rounded-3xl'  />
                         :
                         <video
                             id={"myVideo" + videoId}

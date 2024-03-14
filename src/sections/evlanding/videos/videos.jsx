@@ -12,7 +12,9 @@ import { EffectCreative, Pagination } from "swiper/modules";
 
 import Title from "../../../components/title";
 import curve from "../../../assets/subscription/curve.png";
-// import video1 from "../../../assets/videos/video1.png";
+import men2 from "../../../assets/videos/video1.png";
+import car1 from "../../../assets/videos/car1.png";
+import car2 from "../../../assets/videos/car2.png";
 import video1 from "../../../assets/videos/1.mp4";
 import Video from "./video"
 
@@ -20,26 +22,32 @@ const videos = [
   {
     id: 1,
     content: video1,
+    preview: car1
   },
   {
     id: 2,
     content: video1,
+    preview: men2
   },
   {
     id: 3,
     content: video1,
+    preview: car2
   },
   {
     id: 4,
     content: video1,
+    preview: car1
   },
   {
     id: 5,
     content: video1,
+    preview: men2
   },
   {
     id: 6,
     content: video1,
+    preview: car2
   },
 ];
 
@@ -66,7 +74,7 @@ export default function Videos() {
           slidesPerView={"auto"}
           loop={true}
           creativeEffect={{
-            limitProgress: 2,
+            limitProgress: 4,
             prev: {
               translate: ["-102%", 0, 0],
               rotate: [0, 0, -5.37],
@@ -87,7 +95,7 @@ export default function Videos() {
         >
           {videos.map((video, index) => (
             <SwiperSlide key={index}>
-              <Video videoId={video.id} videoContent={video.content} />
+              <Video videoId={video.id} videoContent={video.content} videoPreview={video.preview} />
             </SwiperSlide>
           ))}
         </Swiper>
