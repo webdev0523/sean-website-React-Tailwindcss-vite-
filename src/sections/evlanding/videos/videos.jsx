@@ -64,7 +64,7 @@ export default function Videos() {
           {/* <p className="text-5xl font-black z-[100] relative leading-[64px]"> */}
           <Title label="Videos" className="origin-bottom -rotate-[2.54deg]" />
           {/* </p> */}
-          <img src={curve} alt="curve" className="absolute right-0 top-7" />
+          <img src={curve} alt="curve" className="absolute right-0 top-10" />
         </div>
       </div>
 
