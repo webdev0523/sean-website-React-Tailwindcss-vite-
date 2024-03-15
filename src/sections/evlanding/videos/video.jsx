@@ -40,7 +40,7 @@ export default function Videos({ videoId, videoContent, videoPreview }) {
                         onLoadStart={() => SetIsLoading(true)}
                         onLoadedData={(data) => SetIsLoading(false)}
                         onEnded={() => SetIsPlay(false)}
-                        className={isLoading ? "!invisible h-0" : "rounded-3xl w-full h-full"}
+                        className={isLoading ? "!display-none" : "rounded-3xl w-full h-full"}
                     />
                 }
             </div>

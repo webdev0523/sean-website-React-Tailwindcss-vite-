@@ -53,7 +53,7 @@ export default function VideoPlay() {
 
                             {
                                 isPlay &&
-                                <div className={isLoading ? "!invisible" : "top-0 rounded-l-full pb-3 overflow-hidden bg-[#FF4C00]"}>
+                                <div className={isLoading ? "!display-none" : "top-0 rounded-l-full pb-3 overflow-hidden bg-[#FF4C00]"}>
                                     <video
                                         id="myVideo"
                                         src={video1}

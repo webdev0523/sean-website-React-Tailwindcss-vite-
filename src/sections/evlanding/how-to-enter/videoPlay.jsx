@@ -41,7 +41,7 @@ export default function VideoPlay() {
                             onLoadStart={() => SetIsLoading(true)}
                             onEnded={() => SetIsPlay(false)}
                             onLoadedData={(data) => SetIsLoading(false)}
-                            className={isLoading ? "!invisible h-0" : "w-full"}
+                            className={isLoading ? "!display-none" : "w-full"}
                         />
                     }
 
