@@ -7,8 +7,9 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 // import required modules
 import { EffectCreative, Pagination } from "swiper/modules";
-import user from "./user.svg"
-import checkbox1 from "./checkbox1.svg"
+import user from "../../../assets/icons/user.svg"
+import email from "../../../assets/icons/email.svg"
+import phone from "../../../assets/icons/phone.svg"
 
 export const properties = [
 	{
@@ -69,20 +70,29 @@ export const properties = [
 ];
 
 export default function Popup({ setIsOpen }) {
+	const onSubmit = (e) => {
+		e.preventDefault()
+		setIsOpen(false)
+	}
+
 	return (
-		<div className='popup w-full bg-white h-dvh fixed bottom-0 z-[10000] overflow-y-auto'>
+		<div className='w-full h-dvh md:p-40 bg-white md:bg-black md:bg-opacity-30 fixed bottom-0 z-[10000] overflow-y-auto'>
 			{/* modal content*/}
-			<div className='bg-white w-full pt-5 rounded-2xl '>
+			<div className='popup bg-white w-full pt-5 rounded-2xl overflow-hidden md:p-8'>
 				{/* Line */}
-				<div className='flex justify-center'>
+				<div className='md:!display-none flex justify-center'>
 					<div className='w-[96px] h-[3px] bg-[#D5D5D5]'></div>
 					<p
 						onClick={() => setIsOpen(false)}
-						className=' font-bold text-3xl absolute top-0 right-5 cursor-pointer'>x</p>
+						className='font-bold text-3xl absolute top-0 right-5 cursor-pointer'>x</p>
 				</div>
+
 				{/* Title */}
-				<div className='text-center mt-6'>
-					<p className='text-2xl font-bold'>Get Entries</p>
+				<div className='max-md:text-center mt-6 flex justify-between'>
+					<p className=' w-full text-2xl font-bold md:basis-1/2'>Get Entries</p>
+					<p
+						onClick={() => setIsOpen(false)}
+						className='max-md:!display-none text-xs cursor-pointer md:basis-1/2 text-right'>X &nbsp; Close</p>
 				</div>
 
 				{/* Packages */}
@@ -110,53 +120,71 @@ export default function Popup({ setIsOpen }) {
 					>
 						{properties.map((property, index) => (
 							<SwiperSlide key={index}>
-								<Package key={index} property={property} />
+								<Package key={index} property={property} className='hover:scale-105' />
 							</SwiperSlide>
 						))}
 					</Swiper>
 				</div>
 
 				{/* Form */}
-				<div className='p-5'>
+				<form onSubmit={onSubmit}>
+					<div className='p-5'>
 
-					<div className='relative mt-3 flex items-center'>
-						<input type='text' placeholder='First Name' className='text-sm rounded-l-2xl w-full h-14 bg-[#C4CDDF1A] pl-12' />
-						<div className='w-[3px] h-[33px] bg-[#D5D5D5]'></div>
-						<input type='text' placeholder='First Name' className='text-sm rounded-r-2xl w-full h-14 bg-[#C4CDDF1A] pl-5' />
-						<img src={user} alt='user' className='absolute top-[15px] left-[12px] ' />
+						<div className='mt-3 flex items-center'>
+							<div className='relative basis-1/2'>
+								<input type='text' placeholder='First Name' className='text-sm rounded-l-2xl md:rounded-2xl w-full h-14 bg-[#C4CDDF1A] pl-12' />
+								<img src={user} alt='user' className='absolute top-[15px] left-[12px] ' />
+							</div>
+
+							<div className=' md:!display-none w-[3px] h-[33px] bg-[#D5D5D5]'></div>
+
+							<div className='relative basis-1/2 md:ml-6'>
+								<img src={user} alt='user' className='max-md:!display-none absolute top-[15px] left-[12px] ' />
+								<input type='text' placeholder='Sur Name' className='text-sm rounded-r-2xl md:rounded-2xl w-full h-14 bg-[#C4CDDF1A] pl-5 md:pl-12' />
+							</div>
+						</div>
+
+						<div className='md:flex'>
+							<div className='relative mt-3 md:basis-1/2'>
+								<input type='text' placeholder='Email' className='text-sm rounded-2xl w-full h-14 bg-[#C4CDDF1A] pl-12' />
+								<img src={email} alt='user' className='absolute top-[15px] left-[12px] ' />
+							</div>
+
+							<div className='relative mt-3 md:basis-1/2 md:ml-6'>
+								<input type='text' placeholder='Phone Number' className='text-sm rounded-2xl w-full h-14 bg-[#C4CDDF1A] pl-12' />
+								<img src={phone} alt='user' className='absolute top-[15px] left-[12px] ' />
+							</div>
+						</div>
+
+						{/* form divider */}
+						<div className='max-md:!display-none mt-8'>
+							<div className='w-full h-[1px] bg-[#D5D5D5]'></div>
+						</div>
+
 					</div>
 
-					<div className='relative mt-3'>
-						<input type='text' placeholder='Email' className='text-sm rounded-2xl w-full h-14 bg-[#C4CDDF1A] pl-12' />
-						<img src={user} alt='user' className='absolute top-[15px] left-[12px] ' />
-					</div>
+					<div className='md:flex justify-between items-center'>
+						<div className='flex justify-center md:justify-start md:basis-1/2'>
+							<div className='flex items-center p-3'>
+								<label className="custom-checkbox">
+									<input type="checkbox" />
+									<span className={`checkmark1 block w-[24px] h-[24px] border border-[#FF4D00] rounded-[3px]`}></span>
+								</label>
+								<p className='text-[10px] md:text-sm font-bold md:font-normal leading-3 p-3'>
+									By Checking The Box You Agree To Our
+									<span className='text-[#FF4D00]'>Terms Of Use</span>
+								</p>
+							</div>
+						</div>
 
-					<div className='relative mt-3'>
-						<input type='text' placeholder='Phone Number' className='text-sm rounded-2xl w-full h-14 bg-[#C4CDDF1A] pl-12' />
-						<img src={user} alt='user' className='absolute top-[15px] left-[12px] ' />
-					</div>
-
-					<div className='flex justify-center'>
-						<div className='flex items-center p-3'>
-							<label className="custom-checkbox">
-								<input type="checkbox" />
-								<span className={`checkmark1 block w-[24px] h-[24px] border border-[#FF4D00] rounded-[3px]`}></span>
-							</label>
-							{/* <img src={checkbox1} alt='checkbox1' /> */}
-							<p className='text-[10px] font-bold leading-3 p-3'>
-								By Checking The Box You Agree To Our
-								<span className='text-[#FF4D00]'>Terms OfUse</span>
-							</p>
+						<div className='md:basis-1/2'>
+							<button
+								type='submit'
+								className='w-full bg-[#FF4D00] text-sm text-white font-medium p-7  md:rounded-2xl hover:scale-105'>Enter Now</button>
 						</div>
 					</div>
 
-				</div>
-
-				<div>
-					<button
-						onClick={() => setIsOpen(false)}
-						className='w-full bg-[#FF4D00] text-sm text-white font-medium p-7'>Enter Now</button>
-				</div>
+				</form>
 				{/* End Form */}
 
 			</div>
