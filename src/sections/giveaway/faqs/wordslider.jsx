@@ -22,8 +22,8 @@ const AccordionItem = ({ title, index, content, open, toggle }) => {
                         <path
                             d="M8 10L12 14L16 10"
                             stroke={`${open ? "white" : "black"}`}
-                            stroke-width="1.5"
-                            stroke-linejoin="bevel"
+                            strokeWidth="1.5"
+                            strokeLinejoin="bevel"
                         />
                     </svg>
                 </div>

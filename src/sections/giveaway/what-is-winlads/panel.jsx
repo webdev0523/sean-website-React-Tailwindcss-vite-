@@ -7,7 +7,7 @@ export default function Panel({ data }) {
 
   const deviceWidth = useMobileWidth();
 
-  console.log(deviceWidth);
+  // console.log(deviceWidth);
   return (
     <div
       style={

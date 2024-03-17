@@ -70,9 +70,9 @@ export const properties = [
 
 export default function Popup({ setIsOpen }) {
 	return (
-		<div className='w-full h-dvh fixed bottom-0 z-[10000]'>
+		<div className='popup w-full bg-white h-dvh fixed bottom-0 z-[10000] flex items-end'>
 			{/* modal content*/}
-			<div className='bg-white h-dvh pt-5 overflow-y-auto rounded-2xl'>
+			<div className='bg-white w-full pt-5 overflow-y-auto rounded-2xl '>
 				{/* Line */}
 				<div className='flex justify-center'>
 					<div className='w-[96px] h-[3px] bg-[#D5D5D5]'></div>
@@ -135,7 +135,7 @@ export default function Popup({ setIsOpen }) {
 
 					<div className='flex justify-center'>
 						<div className='flex items-center p-3'>
-							<label class="custom-checkbox">
+							<label className="custom-checkbox">
 								<input type="checkbox" />
 								<span className={`checkmark1 block w-[24px] h-[24px] border border-[#FF4D00] rounded-[3px]`}></span>
 							</label>

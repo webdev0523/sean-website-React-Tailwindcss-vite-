@@ -43,9 +43,9 @@ export default function Faqs() {
       <div className="flex justify-center my-[100px] relative">
         <div className="relative">
           <div className="absolute sm:right-[-10%] right-[0%] w-[199px] h-[74px] bg-[#56DFE6] origin-bottom -rotate-6"></div>
-          <p className="text-5xl font-black z-[100] relative leading-[64px]">
+          {/* <p className="text-5xl font-black z-[100] relative leading-[64px]"> */}
             <Title label="frequently asked questions" />
-          </p>
+          {/* </p> */}
         </div>
       </div>
 

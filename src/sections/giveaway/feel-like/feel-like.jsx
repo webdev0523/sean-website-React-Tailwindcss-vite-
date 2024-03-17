@@ -25,12 +25,12 @@ export default function FeelLike() {
       <div className="flex justify-center my-[100px] relative">
         <div className="relative">
           <div className="absolute sm:right-[-10%] right-[0%] w-[199px] h-[74px] bg-[#56DFE6] origin-bottom -rotate-6"></div>
-          <p className="text-5xl font-black z-[100] relative leading-[64px]">
+          {/* <p className="text-5xl font-black z-[100] relative leading-[64px]"> */}
             {/* <span className="drop-shadow-[3px_-3px_0px_rgba(255,255,255)] ">
           How To Enter
         </span> */}
             <Title label="Feel like getting an one off entry?" />
-          </p>
+          {/* </p> */}
         </div>
 
         <img
