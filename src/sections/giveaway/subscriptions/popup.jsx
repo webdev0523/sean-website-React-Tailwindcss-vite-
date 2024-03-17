@@ -70,12 +70,15 @@ export const properties = [
 
 export default function Popup({ setIsOpen }) {
 	return (
-		<div className='popup w-full bg-white h-dvh fixed bottom-0 z-[10000] flex items-end'>
+		<div className='popup w-full bg-white h-dvh fixed bottom-0 z-[10000] overflow-y-auto'>
 			{/* modal content*/}
-			<div className='bg-white w-full pt-5 overflow-y-auto rounded-2xl '>
+			<div className='bg-white w-full pt-5 rounded-2xl '>
 				{/* Line */}
 				<div className='flex justify-center'>
 					<div className='w-[96px] h-[3px] bg-[#D5D5D5]'></div>
+					<p
+						onClick={() => setIsOpen(false)}
+						className=' font-bold text-3xl absolute top-0 right-5 cursor-pointer'>x</p>
 				</div>
 				{/* Title */}
 				<div className='text-center mt-6'>
