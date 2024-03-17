@@ -1,10 +1,13 @@
-import React, { useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
+
 import Subscription from "./subscription";
 import Title from "../../../components/title";
-
 import useInteractionObserver from "../../../hooks/use-interaction-observer";
-
-import bgImg from "../../../assets/images/AdobeStock_288590703 2.png";
+import curve from "../../../assets/subscription/curve.png";
+import bg1 from "../../../assets/subscription/bg1.png";
+import bg2 from "../../../assets/subscription/bg2.png";
+import MobileResponsive from "./mobileResponsive";
+import Popup from "./popup";
 
 export const properties = [
   {
@@ -66,6 +69,7 @@ export const properties = [
 
 export default function Subscriptions() {
   const targetRef = useRef(null);
+  const [isOpen, setIsOpen] = useState(false);
 
   const [setTarget, isIntersecting] = useInteractionObserver({
     threshold: 0.2,
@@ -76,48 +80,42 @@ export default function Subscriptions() {
   }, []);
 
   return (
-    <div ref={targetRef}>
-      {/* <div className="text-center mb-[91px]">
-        <div className="text-[47px] font-black text-[#060606] font-sans z-[100]">
-          Subscriptions
-        </div>
-        <div className="w-[199px] h-[74px] -rotate-[6.86deg] absolute bg-[#FF6B00] inset-x-1/2 top-10"></div>
-      </div> */}
+    <div ref={targetRef} className="relative">
+      <img src={bg1} alt="bg1" className="absolute right-0 top-[-200px] z-[-1]" />
 
-      <div className="flex justify-center my-[100px] relative">
+      <div className="flex justify-center my-[100px] max-md:my-12 relative">
         <div className="relative ">
-          <div className="absolute sm:right-[-10%] right-[0%] w-[199px] h-[74px] bg-[#FF6B00] origin-bottom -rotate-6"></div>
-          <p className="text-5xl font-black z-[100] relative leading-[64px]">
-            <Title label="Subscriptions" />
-          </p>
+          {/* <p className="text-5xl font-black z-[100] relative leading-[64px]"> */}
+          <div className="absolute sm:right-[-10%] right-[0%] w-[199px]  h-[74px] max-md:w-[99px] max-md:h-[40px] bg-[#FF6B00] origin-bottom -rotate-6"></div>
+          <Title label="Subscriptions" className="origin-bottom -rotate-[2.54deg]" />
+          {/* </p> */}
+          {/* <div className="absolute right-0 top-7 max-sm:top-10 w-full flex max-md:justify-center justify-end">
+            <img src={curve} alt="curve" className="max-md:w-[167px] " />
+          </div> */}
         </div>
-
-        <img
-          className="absolute top-0 left-0 right-0 z-[-1] -translate-y-1/2 w-full"
-          src={bgImg}
-        />
       </div>
 
       <div
-        className={`flex flex-row gap-4 transition-all justify-center flex-wrap max-w-[1200px] mx-auto duration-[2000ms] ${
-          isIntersecting ? "opacity-1" : "opacity-0"
-        }`}
+        className={`max-md:!display-none flex flex-row gap-4 transition-all justify-center flex-wrap max-w-[1200px] mx-auto duration-[2000ms] ${isIntersecting ? "opacity-1" : "opacity-0"
+          }`}
       >
         {properties.map((property, index) => (
           <Subscription
             key={index}
             property={property}
-            // className={`${
-            //   isIntersecting ? "opacity-1" : "opacity-0"
-            // } ease-in duration-3000  transition-all`}
-            // style={{
-            //   animtionDuration: 4000,
-            //   animationDelay: `${index * 1000}ms`,
-            //   opacity: `${isIntersecting ? "1" : "0"}`,
-            // }}
+            className="z-[1000]"
+            setIsOpen={setIsOpen}
           />
         ))}
+        <img src={bg2} alt="bg2" className="absolute left-0 bottom-0" />
       </div>
+
+
+      {/* mobile responsive */}
+      <MobileResponsive isIntersecting={isIntersecting} setIsOpen={setIsOpen} />
+      {/* end mobile responsive */}
+
+      {isOpen && <Popup setIsOpen={setIsOpen} />}
     </div>
   );
 }

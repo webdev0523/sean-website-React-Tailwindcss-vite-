@@ -2,14 +2,14 @@ import React from "react";
 import check from "../../../assets/check.svg";
 import star from "../../../assets/star.svg";
 
-const Subscription = ({ property, className, style }) => {
+const Subscription = ({ property, className, style, setIsOpen }) => {
   return (
     <div
       style={style}
-      className={`hover:translate-y-3 hover:opacity-90 ${className}`}
+      className={`md:hover:translate-y-3 md:hover:opacity-90 ${className}`}
     >
       {property.title === "Platinum" ? (
-        <div className="w-[165px] h-[36px] ml-[88px] flex items-center pl-6 text-white  bg-black rounded-t-2xl">
+        <div className="w-[165px] max-md:w-[150px] h-[36px] ml-[88px] max-md:ml-[77px]  flex items-center pl-6 text-white  bg-black rounded-t-2xl">
           <img src={star}></img>
           <p>Most Popular</p>
         </div>
@@ -18,11 +18,11 @@ const Subscription = ({ property, className, style }) => {
       )}
 
       <div
-        className={`w-[342px] h-[404px] rounded-2xl ${property.backgroundColor} ${property.borderColor} border-2 `}
+        className={`w-[342px] md:h-[404px] max-md:w-[299px] rounded-2xl ${property.backgroundColor} ${property.borderColor} border-2 `}
       >
         <div className="flex items-stretch pb-2">
           <div className="w-2/4 ml-8 mt-8 text-left">
-            <h1 className="text-2xl font-extrabold">{property.title}</h1>
+            <h1 className="text-2xl text font-extrabold">{property.title}</h1>
             <p className="text-2xl font-light">Tier</p>
           </div>
           <div className="w-2/4 ml-8 mt-8 text-left">
@@ -60,19 +60,21 @@ const Subscription = ({ property, className, style }) => {
             </p>
           </div>
         </div>
-        <div className="mt-[23px] ml-[14px]">
-          <button className=" border border-black/[.13] rounded-lg  text-sm  px-[116px] font-normal py-[14px]">
+        <div className="mt-[23px] ml-[14px] max-md:m-2">
+          <button className=" border border-black/[.13] rounded-lg  text-sm  px-[116px] font-normal py-[14px] max-md:text-xs max-md:px-5 max-md:w-full ">
             View More...
           </button>
         </div>
-        <div className="mt-[19px] ml-[14px]">
+        <div className="mt-[19px] ml-[14px] max-md:m-2">
           <button
-            className={`border hover:opacity-75 hover:-translate-y-0.5 border-black/[.13] rounded-lg text-white  text-sm  px-[105px] font-bold py-[14px] ${property.buttonColor}`}
+            onClick={() => setIsOpen(true)}
+            className={`border hover:opacity-75 hover:-translate-y-0.5 border-black/[.13] rounded-lg text-white  text-sm  px-[105px] font-bold py-[14px] max-md:text-xs max-md:px-5 max-md:w-full ${property.buttonColor}`}
           >
             CHOOSE PLAN
           </button>
         </div>
       </div>
+
     </div>
   );
 };
