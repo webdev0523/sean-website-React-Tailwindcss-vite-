@@ -23,7 +23,7 @@ export default function WhatIsWinlads() {
       {/* <div className="flex items-center justify-center mb-6">
         <div className="relative">
           <div className="absolute right-[-10%] w-[235px] h-[65px] bg-[#FF6C2E] origin-bottom -rotate-6"></div>
-          <p className='text-5xl font-black font-["Neuething"] z-[100] relative'>
+          <p className='text-5xl font-black font-["Neuething Sans Test"] z-[100] relative'>
             What Is Winlads
           </p>
         </div>

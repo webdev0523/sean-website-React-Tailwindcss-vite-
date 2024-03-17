@@ -68,7 +68,7 @@ export default function Subscriptions() {
   const targetRef = useRef(null);
 
   const [setTarget, isIntersecting] = useInteractionObserver({
-    threshold: 0.5,
+    threshold: 0.2,
   });
 
   useEffect(() => {
@@ -92,10 +92,10 @@ export default function Subscriptions() {
           </p>
         </div>
 
-        {/* <img
+        <img
           className="absolute top-0 left-0 right-0 z-[-1] -translate-y-1/2 w-full"
           src={bgImg}
-        /> */}
+        />
       </div>
 
       <div

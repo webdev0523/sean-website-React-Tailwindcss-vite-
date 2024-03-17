@@ -32,7 +32,7 @@ export default function PastWinners() {
   const targetRef = useRef(null);
 
   const [setTarget, isIntersecting] = useInteractionObserver({
-    threshold: 0.5,
+    threshold: 0.2,
   });
 
   useEffect(() => {
