@@ -27,7 +27,7 @@ const WinA = ({ property, className, style }) => {
 
       <div className="flex lg:flex-row flex-col justify-center items-center w-full">
         <div className="flex flex-col justify-center items-center max-lg:items-start w-full">
-          <div className=" flex justify-center items-center  rounded-full bg-[#F5F5F5] w-[300px] h-[300px] max-md:w-[150px] max-md:h-[150px] border-dashed border-2 border-[#B5B5B5] hover:scale-105 transition-all">
+          <div className=" flex justify-center items-center  rounded-full bg-[#F5F5F5] w-[300px] h-[300px] max-md:w-[150px] max-md:h-[150px] border-dashed border-2 border-[#B5B5B5] hover:scale-105 duration-300 transition-all">
             <img src={tesla} alt="tesla" />
           </div>
           <div className="text-center relative mt-16 origin-bottom -rotate-[2.54deg] max-lg:mt-[-60px] max-lg:ml-[100px]">
@@ -50,7 +50,7 @@ const WinA = ({ property, className, style }) => {
         </div>
 
         <div className="flex flex-col justify-center items-center max-lg:items-end w-full max-md:mt-[-30px]">
-          <div className=" flex justify-center items-center rounded-full bg-[#F5F5F5] w-[300px] h-[300px] max-md:w-[150px] max-md:h-[150px] border-dashed border-2 border-[#B5B5B5] lg:mt-24 hover:scale-105 transition-all">
+          <div className=" flex justify-center items-center rounded-full bg-[#F5F5F5] w-[300px] h-[300px] max-md:w-[150px] max-md:h-[150px] border-dashed border-2 border-[#B5B5B5] lg:mt-24 hover:scale-105 duration-300 transition-all">
             <img src={isuzu} alt="isuzu" />
           </div>
           <div className="text-center mt-16 relative origin-bottom -rotate-[2.54deg] max-lg:mt-[-70px] max-lg:mr-[130px]">
@@ -78,7 +78,7 @@ const WinA = ({ property, className, style }) => {
         </div>
 
         <div className="flex flex-col justify-center items-center max-lg:items-start w-full max-md:mt-[-50px]">
-          <div className=" flex justify-center items-center rounded-full bg-[#F5F5F5] w-[300px] h-[300px] max-md:w-[150px] max-md:h-[150px] border-dashed border-2 border-[#B5B5B5] hover:scale-105 transition-all">
+          <div className=" flex justify-center items-center rounded-full bg-[#F5F5F5] w-[300px] h-[300px] max-md:w-[150px] max-md:h-[150px] border-dashed border-2 border-[#B5B5B5] hover:scale-105 duration-300 transition-all">
             <img src={cash} alt="cash" />
           </div>
           <div className="text-center mt-16 relative origin-bottom -rotate-[2.54deg] max-lg:mt-[-50px] max-lg:ml-[100px]">

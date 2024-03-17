@@ -120,7 +120,7 @@ export default function Popup({ setIsOpen }) {
 					>
 						{properties.map((property, index) => (
 							<SwiperSlide key={index}>
-								<Package key={index} property={property} className='hover:scale-105' />
+								<Package key={index} property={property} className='hover:scale-105 duration-300 duration-300' />
 							</SwiperSlide>
 						))}
 					</Swiper>
@@ -180,7 +180,7 @@ export default function Popup({ setIsOpen }) {
 						<div className='md:basis-1/2'>
 							<button
 								type='submit'
-								className='w-full bg-[#FF4D00] text-sm text-white font-medium p-7  md:rounded-2xl hover:scale-105'>Enter Now</button>
+								className='w-full bg-[#FF4D00] text-sm text-white font-medium p-7  md:rounded-2xl hover:scale-105 duration-300 duration-300'>Enter Now</button>
 						</div>
 					</div>
 

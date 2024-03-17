@@ -68,7 +68,7 @@ export default function VideoPlay() {
                             {!isPlay && <div className="absolute top-0 w-full h-full flex justify-center items-center">
                                 <button
                                     onClick={() => SetIsPlay(true)}
-                                    className="hover:scale-105 transition-all z-[1000]">
+                                    className="hover:scale-105 duration-300 transition-all z-[1000]">
                                     <PlayButton />
                                 </button>
                             </div>}

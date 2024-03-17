@@ -43,14 +43,14 @@ export default function Testominials() {
           <div className="flex max-[1024px]:justify-center mt-8 max-md:!display-none ">
             <span
               onClick={() => swiperInstance.slidePrev()}
-              className="hover:scale-105 hover:cursor-pointer transition-all"
+              className="hover:scale-105 duration-300 hover:cursor-pointer transition-all"
             >
               <LeftButton />
             </span>
             &nbsp; &nbsp;
             <span
               onClick={() => swiperInstance.slideNext()}
-              className="hover:scale-105 hover:cursor-pointer transition-all"
+              className="hover:scale-105 duration-300 hover:cursor-pointer transition-all"
             >
               <RightButton />
             </span>
