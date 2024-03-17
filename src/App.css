@@ -42,6 +42,15 @@
     width: 100%;
 }
 
+.subscription-swiper {
+    /* width: 100%; */
+}
+
+.subscription-swiper .swiper-slide {
+    width: auto !important;
+    padding: 6px;
+}
+
 .mySwiper1 {
     width: 100%;
     padding-top: 100px !important;
@@ -73,7 +82,7 @@
 .mySwiper .swiper-slide img,
 .mySwiper .swiper-slide video {
     display: block;
-    width: 100%;
+    /* width: 100%; */
 }
 
 @keyframes appear {
@@ -147,3 +156,4 @@
         /* Move to the left side */
     }
 }
+
