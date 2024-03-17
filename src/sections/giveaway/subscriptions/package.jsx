@@ -1,7 +1,6 @@
 import React from "react";
 import check from "../../../assets/check.svg";
-import checkbox from "./checkbox.svg"
-import "./subscription.css"
+import "./subscriptions.css"
 
 const Package = ({ property, className, style }) => {
 	return (
