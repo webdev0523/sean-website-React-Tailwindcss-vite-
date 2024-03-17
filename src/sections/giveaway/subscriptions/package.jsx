@@ -14,7 +14,7 @@ const Package = ({ property, className, style }) => {
 			>
 				<div className="flex justify-between">
 					<p className="text-[20px] font-bold font-['Axiforma']">{property.number}</p>
-					<label class="custom-checkbox">
+					<label className="custom-checkbox">
 						<input type="checkbox" />
 						<span className={`checkmark block w-[24px] h-[24px] border ${property.borderColor} rounded-full`}></span>
 					</label>

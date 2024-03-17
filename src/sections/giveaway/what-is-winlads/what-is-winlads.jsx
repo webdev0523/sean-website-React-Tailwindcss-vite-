@@ -32,9 +32,9 @@ export default function WhatIsWinlads() {
       <div className="flex justify-center my-[60px] md:my-[100px]">
         <div className="relative">
           <div className="absolute sm:right-[-10%] right-[0%] w-[199px] h-[74px] bg-[#FF6B00] origin-bottom -rotate-6"></div>
-          <p className="text-5xl font-black z-[100] relative leading-[64px]">
+          {/* <p className="text-5xl font-black z-[100] relative leading-[64px]"> */}
             <Title label="What Is Winlads" />
-          </p>
+          {/* </p> */}
         </div>
       </div>
 
@@ -55,8 +55,8 @@ export default function WhatIsWinlads() {
         {/* {[0, 1, 2, 3, 4].map((num) => (
           <ImgPanel order={num} key={num} />
         ))} */}
-        {Winlads.map((d) => (
-          <Panel data={d} />
+        {Winlads.map((d, index) => (
+          <Panel data={d} key={index} />
         ))}
       </div>
     </div>

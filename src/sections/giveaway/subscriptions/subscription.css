@@ -23,3 +23,7 @@
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.popup {
+    animation: comeFromBelow 0.5s ease forwards;
+}
