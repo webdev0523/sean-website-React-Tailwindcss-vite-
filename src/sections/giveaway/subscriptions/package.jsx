@@ -7,10 +7,10 @@ const Package = ({ property, className, style }) => {
 	return (
 		<div
 			style={style}
-			className={`md:hover:translate-y-3 md:hover:opacity-90 ${className}`}
+			className={`${className}`}
 		>
 			<div
-				className={`w-[162px] rounded-2xl ${property.backgroundColor} ${property.borderColor} border-2 p-4`}
+				className={`w-[162px] md:w-[270px] rounded-2xl ${property.backgroundColor} ${property.borderColor} border-2 p-4`}
 			>
 				<div className="flex justify-between">
 					<p className="text-[20px] font-bold font-['Axiforma']">{property.number}</p>
