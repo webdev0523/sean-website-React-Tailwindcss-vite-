@@ -6,7 +6,7 @@ const Subscription = ({ property, className, style }) => {
   return (
     <div
       style={style}
-      className={`md:hover:translate-y-3 md:hover:opacity-90 ${className}`}
+      className={`md:hover:translate-y-3 duration-300 md:hover:opacity-90 ${className}`}
     >
       {property.title === "Platinum" ? (
         <div className="w-[165px] max-md:w-[150px] h-[36px] ml-[88px] max-md:ml-[77px]  flex items-center pl-6 text-white  bg-black rounded-t-2xl">

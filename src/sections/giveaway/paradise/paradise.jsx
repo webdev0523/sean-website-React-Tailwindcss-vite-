@@ -86,7 +86,7 @@ export default function Paradise() {
               />
             </div>
 
-            <button className="absolute z-40 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ml-[45px] hover:scale-105 transition-all">
+            <button className="absolute z-40 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ml-[45px] hover:scale-105 duration-300 transition-all">
               <svg
                 width="137"
                 height="137"

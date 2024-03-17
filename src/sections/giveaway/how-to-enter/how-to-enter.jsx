@@ -49,7 +49,7 @@ export default function HowToEnter() {
             className="rounded-3xl"
           />
           
-          <button className="absolute top-[40%] hover:scale-105 transition-all">
+          <button className="absolute top-[40%] hover:scale-105 duration-300 transition-all">
             <svg
               width="137"
               height="137"
