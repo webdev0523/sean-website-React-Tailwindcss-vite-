@@ -68,7 +68,7 @@ export default function Roadmap() {
 						<img src={img3} alt='img3' />
 						<div className='flex items-center absolute top-[-50%] left-[-120%] max-w-[200px]'>
 							<div>
-								<p className=' font-medium text-2xl font-[#FF4C00]'>24th March</p>
+								<p className=' font-medium text-2xl text-[#FF4C00]'>24th March</p>
 								<p className=' font-normal text-base'>EV Launch 2month campaign</p>
 							</div>
 							<div className=''>
