@@ -6,7 +6,7 @@ import bg from "../../../assets/giveaway/purchasing/bg.png";
 
 export default function Purchasing() {
 	return (
-		<div className='mt-[250px] md:mt-[300px]'>
+		<div className='mt-[250px] md:mt-[200px]'>
 			{/* Title */}
 			<div className='flex justify-center w-full'>
 				<div className="relative fit-content">
