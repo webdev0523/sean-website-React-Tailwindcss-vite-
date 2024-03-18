@@ -135,7 +135,7 @@
 
 @keyframes scroll-left {
     0% {
-        transform: translateX(100%);
+        transform: translateX(0%);
         /* Start from the right side */
     }
 
@@ -152,7 +152,7 @@
     }
 
     100% {
-        transform: translateX(100%);
+        transform: translateX(0%);
         /* Move to the left side */
     }
 }
