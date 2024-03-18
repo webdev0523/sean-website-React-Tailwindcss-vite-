@@ -32,8 +32,8 @@ export default function Purchasing() {
 			{/* End Title */}
 
 			{/* Content */}
-			<div className='mt-10 md:mx-24 mx-8'>
-				<p className=' font-light text-2xl text-center capitalize'>We're committed to helping you save money at EVERY store you shop at within Australia as easily as possible, and are working towards our goal of being in EVERY store / business within Australia!</p>
+			<div className='mt-10 md:mx-24 mx-8 '>
+				<p className='mx-auto max-w-[860px] font-light text-2xl text-center capitalize'>We're committed to helping you save money at EVERY store you shop at within Australia as easily as possible, and are working towards our goal of being in EVERY store / business within Australia!</p>
 			</div>
 			{/* End Content */}
 
