@@ -33,7 +33,7 @@ export default function Roadmap() {
 
 				<div className='absolute top-0 left-0'>
 					<div className='relative'>
-						<img src={img1} alt='img1' />
+						<img src={img1} alt='img1' className='hover:scale-110 duration-1000' />
 						<div className='flex items-center absolute top-[-50%] right-[-120%]'>
 							<div className=''>
 								<img src={vector1} alt='vector1' />
@@ -48,7 +48,7 @@ export default function Roadmap() {
 
 				<div className='absolute top-0 left-1/3'>
 					<div className='relative'>
-						<img src={img2} alt='img2' />
+						<img src={img2} alt='img2' className='hover:scale-110 duration-1000' />
 						<div className='flex items-start absolute bottom-[-150%] left-[-150%] max-w-[230px]'>
 							<div>
 								<p className=' font-medium text-2xl'>17th Of March</p>
@@ -65,7 +65,7 @@ export default function Roadmap() {
 
 				<div className='absolute top-0 left-2/3' >
 					<div className='relative'>
-						<img src={img3} alt='img3' />
+						<img src={img3} alt='img3' className='hover:scale-110 duration-1000' />
 						<div className='flex items-center absolute top-[-50%] left-[-120%] max-w-[200px]'>
 							<div>
 								<p className=' font-medium text-2xl text-[#FF4C00]'>24th March</p>
@@ -82,7 +82,7 @@ export default function Roadmap() {
 
 				<div className='absolute top-[16.7%] right-0 ' >
 					<div className='relative'>
-						<img src={img4} alt='img4' />
+						<img src={img4} alt='img4' className='hover:scale-110 duration-1000' />
 						<div className='flex items-center absolute top-[-50%] left-[-200%] max-w-[200px]'>
 							<div>
 								<p className=' font-medium text-2xl font-[#FF4C00]'>31th March</p>
@@ -99,7 +99,7 @@ export default function Roadmap() {
 
 				<div className='absolute top-1/3 right-1/3 mt-[-65px]'>
 					<div className='relative'>
-						<img src={img5} alt='img5' />
+						<img src={img5} alt='img5' className='hover:scale-110 duration-1000' />
 						<div className='flex items-center absolute bottom-[-50%] right-[-100%] max-w-[200px]'>
 							<div className=''>
 								<svg width="66" height="23" viewBox="0 0 66 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -116,7 +116,7 @@ export default function Roadmap() {
 
 				<div className='absolute top-1/3 left-1/4 mt-[-65px]'>
 					<div className='relative'>
-						<img src={img6} alt='img6' />
+						<img src={img6} alt='img6' className='hover:scale-110 duration-1000' />
 						<div className='flex items-center absolute top-[-100%] right-[-150%] max-w-[220px]'>
 							<div className=''>
 								<svg width="66" height="23" viewBox="0 0 66 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -133,7 +133,7 @@ export default function Roadmap() {
 
 				<div className='absolute top-1/2 left-0 mt-[-65px]'>
 					<div className='relative'>
-						<img src={img5} alt='img7' />
+						<img src={img5} alt='img7' className='hover:scale-110 duration-1000' />
 						<div className='flex items-center absolute top-[20%] left-[100%] min-w-[200px]'>
 							<div className=''>
 								<svg width="56" height="2" viewBox="0 0 56 2" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -150,7 +150,7 @@ export default function Roadmap() {
 
 				<div className='absolute bottom-1/3 left-1/4 mb-[-20px] '>
 					<div className='relative'>
-						<img src={img6} alt='img8' />
+						<img src={img6} alt='img8' className='hover:scale-110 duration-1000' />
 						<div className='flex items-center absolute top-[100%] right-[100%] min-w-[200px]'>
 							<div>
 								<p className=' font-medium text-2xl'>28st April</p>
@@ -167,7 +167,7 @@ export default function Roadmap() {
 
 				<div className='absolute bottom-1/3 right-1/4 mb-[-20px] '>
 					<div className='relative'>
-						<img src={img5} alt='img9' />
+						<img src={img5} alt='img9' className='hover:scale-110 duration-1000' />
 						<div className='flex items-center absolute top-[-100%] right-[100%] min-w-[200px]'>
 							<div>
 								<p className=' font-medium text-2xl'>5th May</p>
@@ -184,7 +184,7 @@ export default function Roadmap() {
 
 				<div className='absolute bottom-[16.7%] right-0 '>
 					<div className='relative'>
-						<img src={img4} alt='img10' />
+						<img src={img4} alt='img10' className='hover:scale-110 duration-1000' />
 						<div className='flex items-center absolute top-[-50%] right-[100%] min-w-[200px]'>
 							<div>
 								<p className=' font-medium text-2xl'>12th May</p>
@@ -201,7 +201,7 @@ export default function Roadmap() {
 
 				<div className='absolute bottom-0 right-1/3'>
 					<div className='relative'>
-						<img src={img5} alt='img11' />
+						<img src={img5} alt='img11' className='hover:scale-110 duration-1000' />
 						<div className='flex items-center absolute top-[120%] left-[100%] min-w-[200px]'>
 							<div className=''>
 								<svg width="66" height="23" viewBox="0 0 66 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -218,7 +218,7 @@ export default function Roadmap() {
 
 				<div className='absolute bottom-0 left-0 '>
 					<div className='relative'>
-						<img src={img4} alt='img12' />
+						<img src={img4} alt='img12' className='hover:scale-110 duration-1000' />
 						<div className='flex items-center absolute bottom-[120%] left-[100%] min-w-[200px]'>
 							<div className=''>
 								<svg width="66" height="23" viewBox="0 0 66 23" fill="none" xmlns="http://www.w3.org/2000/svg">
