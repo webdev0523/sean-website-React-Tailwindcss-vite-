@@ -23,7 +23,7 @@ export default function VideoPlay() {
   return (
     <div className="">
       <div className="relative">
-        <div className='bg-[black]  border-4 border-[#101821] rounded-3xl overflow-hidden'>
+        <div className='bg-[black]  border-4 border-[#101821] rounded-3xl overflow-hidden md:w-[800px]'>
           {(!isPlay || isLoading) &&
             <div className=''>
               <img src={previewImage} alt="videoimg" className="w-full rounded-3xl" />
