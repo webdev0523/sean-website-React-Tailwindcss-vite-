@@ -13,8 +13,8 @@ import bg from '../../../assets/giveaway/roadmap/bg.svg'
 
 export default function Roadmap() {
 	return (
-		<div className='mt-[100px] md:mt-[200px] relative min-w-[1280px]'>
-			<img src={bg} alt='bg' className='absolute top-[-300px] w-full' />
+		<div className='mt-[100px] md:mt-[200px] relative min-w-[1280px] overflow-visibles'>
+			<img src={bg} alt='bg' className='absolute top-[-300px] w-full z-[-1]' />
 			{/* Title */}
 			<div className='flex justify-center w-full'>
 				<div className="relative fit-content">
