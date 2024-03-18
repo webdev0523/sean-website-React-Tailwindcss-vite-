@@ -8,6 +8,11 @@ import {
   FeelLike,
   PastWinners,
   Faqs,
+  DrawDetails,
+  Purchasing,
+  Roadmap,
+  PurchaseToday,
+  OurPartners
 } from "../sections/giveaway";
 
 export default function GiveawayPage() {
@@ -19,6 +24,11 @@ export default function GiveawayPage() {
       <HowToEnter />
       <WhatIsWinlads />
       <FeelLike />
+      <DrawDetails />
+      <Purchasing />
+      {/* <Roadmap /> */}
+      <PurchaseToday />
+      <OurPartners />
       <PastWinners />
       <Faqs />
     </>

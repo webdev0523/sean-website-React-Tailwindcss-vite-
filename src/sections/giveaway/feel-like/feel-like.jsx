@@ -4,9 +4,6 @@ import Subscription from "../subscriptions/subscription";
 import { properties } from "../subscriptions/subscriptions";
 
 import useInteractionObserver from "../../../hooks/use-interaction-observer";
-
-import Icon4 from "../../../components/icons/icon4";
-
 import bgImg from "../../../assets/images/AdobeStock_288590703 3.jpg";
 
 export default function FeelLike() {
@@ -53,9 +50,6 @@ export default function FeelLike() {
         ))}
       </div>
 
-      <div className="flex justify-center">
-        <Icon4 />
-      </div>
     </div>
   );
 }
