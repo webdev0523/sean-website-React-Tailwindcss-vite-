@@ -26,7 +26,7 @@ export default function GiveawayPage() {
       <FeelLike />
       <DrawDetails />
       <Purchasing />
-      {/* <Roadmap /> */}
+      <Roadmap />
       <PurchaseToday />
       <OurPartners />
       <PastWinners />
