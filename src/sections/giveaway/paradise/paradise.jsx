@@ -70,7 +70,7 @@ export default function Paradise() {
             </div>
           </div>
 
-          <div className="mt-10  grid grid-cols-1 lg:grid-cols-2 gap-4">
+          <div className="mt-10  grid grid-cols-2 gap-4">
             {homes.map((home, index) => (
               <img key={index} src={home} className="w-full"></img>
             ))}
