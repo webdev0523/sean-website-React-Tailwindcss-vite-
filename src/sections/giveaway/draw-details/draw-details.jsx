@@ -14,8 +14,8 @@ export default function DrawDetails() {
                 </div>
             </div>
             <div className='basis-1/2 max-md:p-8'>
-                <p className=' text-5xl font-black font-["Neuething"] max-md:text-center'>DRAW</p>
-                <p className=' text-5xl font-black font-["Neuething"] max-md:text-center'>DETAILS</p>
+                <p className=' text-5xl max-md:text-2xl font-black font-["Neuething"] max-md:text-center'>DRAW</p>
+                <p className=' text-5xl max-md:text-2xl font-black font-["Neuething"] max-md:text-center'>DETAILS</p>
                 <ul className='list-image-[url(/icons/bullet.svg)] pl-5'>
                     <li className='mt-7 font-normal text-[18px] '>Valid to all Australian residents</li>
                     <li className='mt-5 font-normal text-[18px]'>Winner announced 25th of February, 2024 8:30PM via Facebook live</li>

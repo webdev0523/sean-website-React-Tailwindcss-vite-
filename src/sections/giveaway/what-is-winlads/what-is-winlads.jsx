@@ -39,7 +39,7 @@ export default function WhatIsWinlads() {
       </div>
 
       <div className="px-0 md:px-10 mx-10 mt-10">
-        <p className="font-Outfit text-[22px] text-center capitalize">
+        <p className="font-Outfit text-[22px] max-md:text-lg text-center capitalize">
           Everyone from driftworks was super helpful. i’ve heard this before
           from many people and that’s why i decided to buy through them! i ordered Stanceparts
           aircups for my car and they arrived damaged. UPS crushed the

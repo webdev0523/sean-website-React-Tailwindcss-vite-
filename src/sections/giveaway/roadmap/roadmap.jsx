@@ -239,7 +239,7 @@ export default function Roadmap() {
 			{/* End Content */}
 
 			{/* mobile */}
-			<div className=' xl:!display-none mt-[100px] mx-6 p-[35px] relative z-[100]'>
+			<div className=' xl:!display-none mt-[50px] mx-6 p-[35px] relative z-[100]'>
 				<div>
 					<img src={roadmap} alt='roadmap' />
 				</div>
