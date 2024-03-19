@@ -42,6 +42,12 @@
     width: 100%;
 }
 
+.winlads-swiper {
+    width: 100%;
+}
+
+
+
 .subscription-swiper {
     /* width: 100%; */
 }
@@ -76,6 +82,11 @@
 
     .feel-like-swiper .swiper-slide {
         width: 300px !important;
+    }
+
+    .winlads-swiper .swiper-slide {
+        width: 180px !important;
+        padding: 10px;
     }
 }
 
