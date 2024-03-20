@@ -10,7 +10,12 @@ import {
   Faqs,
   Testominials,
   Videos,
-  Cash
+  Cash,
+  DrawDetails,
+  Purchasing,
+  Roadmap,
+  PurchaseToday,
+  OurPartners
 } from "../sections/evlanding";
 
 export default function EVLandingPage() {
@@ -23,6 +28,11 @@ export default function EVLandingPage() {
       <WhatIsWinlads />
       <Cash />
       <FeelLike />
+      <DrawDetails />
+      <Purchasing />
+      <Roadmap />
+      <PurchaseToday />
+      <OurPartners />
       <PastWinners />
       {/* <Faqs /> */}
       <Testominials />

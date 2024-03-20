@@ -1,0 +1,1 @@
+export {default as PurchaseToday} from './purchase-today';
