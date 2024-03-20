@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 import Subscription from "./subscription";
 import Title from "../../../components/title";
@@ -6,7 +6,8 @@ import useInteractionObserver from "../../../hooks/use-interaction-observer";
 import curve from "../../../assets/subscription/curve.png";
 import bg1 from "../../../assets/subscription/bg1.png";
 import bg2 from "../../../assets/subscription/bg2.png";
-import MobileResponsive from "../feel-like/mobileResponsive";
+import MobileResponsive from "./mobileResponsive";
+import Popup from "./popup";
 
 export const properties = [
   {
@@ -68,6 +69,7 @@ export const properties = [
 
 export default function Subscriptions() {
   const targetRef = useRef(null);
+  const [isOpen, setIsOpen] = useState(false);
 
   const [setTarget, isIntersecting] = useInteractionObserver({
     threshold: 0.2,
@@ -101,6 +103,7 @@ export default function Subscriptions() {
             key={index}
             property={property}
             className="z-[1000]"
+            setIsOpen={setIsOpen}
           />
         ))}
         <img src={bg2} alt="bg2" className="absolute left-0 bottom-0" />
@@ -108,8 +111,10 @@ export default function Subscriptions() {
 
 
       {/* mobile responsive */}
-      <MobileResponsive isIntersecting={isIntersecting} />
+      <MobileResponsive isIntersecting={isIntersecting} setIsOpen={setIsOpen} />
       {/* end mobile responsive */}
+
+      {isOpen && <Popup setIsOpen={setIsOpen} />}
     </div>
   );
 }

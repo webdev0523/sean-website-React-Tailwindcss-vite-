@@ -10,7 +10,7 @@ import { EffectCreative, Pagination } from "swiper/modules";
 import Subscription from "../subscriptions/subscription";
 import { properties } from "../subscriptions/subscriptions";
 
-export default function MobileResponsive({isIntersecting}) {
+export default function MobileResponsive({isIntersecting, setIsOpen}) {
     return (
         <div
             className={`md:!display-none flex flex-row gap-4  justify-center flex-wrap max-w-[1200px] mx-auto duration-[2000ms] ${isIntersecting ? "opacity-1" : "opacity-0"
@@ -39,7 +39,7 @@ export default function MobileResponsive({isIntersecting}) {
             >
                 {properties.map((property, index) => (
                     <SwiperSlide key={index}>
-                        <Subscription key={index} property={property} />
+                        <Subscription key={index} property={property} setIsOpen={setIsOpen} />
                     </SwiperSlide>
                 ))}
             </Swiper>
