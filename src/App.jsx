@@ -7,8 +7,8 @@ function App() {
 
   return (
     <Layout>
-      {/* <GiveawayPage /> */}
-      <EVLandingPage />  
+      <GiveawayPage />
+      {/* <EVLandingPage />   */}
     </Layout>
   );
 }
