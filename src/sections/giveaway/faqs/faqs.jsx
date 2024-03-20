@@ -39,7 +39,7 @@ export default function Faqs() {
   };
 
   return (
-    <div className="relative my-[200px]">
+    <div className="relative my-[100px]">
       <div className="flex justify-center my-[100px] relative">
         <div className="relative">
           <div className="absolute sm:right-[-10%] right-[0%] w-[199px] h-[74px] bg-[#56DFE6] origin-bottom -rotate-6"></div>

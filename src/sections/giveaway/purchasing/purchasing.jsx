@@ -33,7 +33,7 @@ export default function Purchasing() {
 
 			{/* Content */}
 			<div className='mt-10 md:mx-24 mx-8 '>
-				<p className='mx-auto max-w-[860px] font-light text-2xl text-center capitalize'>We're committed to helping you save money at EVERY store you shop at within Australia as easily as possible, and are working towards our goal of being in EVERY store / business within Australia!</p>
+				<p className='mx-auto max-w-[860px] font-light text-2xl max-md:text-lg text-center capitalize'>We're committed to helping you save money at EVERY store you shop at within Australia as easily as possible, and are working towards our goal of being in EVERY store / business within Australia!</p>
 			</div>
 			{/* End Content */}
 
@@ -43,7 +43,7 @@ export default function Purchasing() {
 			</div>
 
 			<div className='flex justify-center mt-20 z-10 mx-8'>
-				<button className='bg-[#FF6C2E] w-[751px] py-6 md:py-10 text-white text-3xl focus:!outline-0 rounded-lg font-bold font-["Outfit"] hover:opacity-80 transition-opacity'>
+				<button className='bg-[#FF6C2E] w-[751px] py-6 md:py-10 text-white text-3xl max-md:text-lg focus:!outline-0 rounded-lg font-bold font-["Outfit"] hover:opacity-80 transition-opacity'>
 					BECOME A MEMBER
 				</button>
 			</div>

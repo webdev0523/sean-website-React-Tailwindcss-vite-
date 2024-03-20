@@ -11,6 +11,7 @@ import map from "../../../assets/map.svg";
 import sea from "../../../assets/images/sea.png";
 
 import Icon5 from "../../../components/icons/icon5";
+import VideoPlay from "./videoPlay";
 
 export default function Paradise() {
   const homes = [home1, home2, home3, home4];
@@ -37,18 +38,18 @@ export default function Paradise() {
       </div>
 
       <div className="flex flex-col-reverse lg:flex-row">
-        <div className="sm:mx-[160px] mx-4 flex-col mt-[69px]">
+        <div className="basis-1/2 sm:mx-[160px] mx-4 flex-col mt-[69px]">
           <div className="flex flex-row">
             <div className="w-[49px] h-[199px] bg-[#FF6B00] mr-[20px]"></div>
             <div>
               <div className="text-[#060606]">
                 <p className="font-medium text-xs leading-[15px]">HOTEL</p>
-                <p className="text-[40px] font-black leading-[51px] font-[Neuething]">
+                <p className="text-[40px] max-md:text-2xl font-black leading-[51px] font-[Neuething]">
                   THE MULIA
                 </p>
               </div>
 
-              <p className="text-[24px] font-light leading-[30px] text-justify">
+              <p className="text-[24px] max-md:text-lg font-light leading-[30px] text-justify">
                 Experience the height of luxury at The Mulia, a suite-only haven
                 nestled within the renowned multi-award-winning mega resort, set
                 against the pristine beachfront of Nusa Dua.
@@ -69,41 +70,22 @@ export default function Paradise() {
             </div>
           </div>
 
-          <div className="mt-10  grid grid-cols-1 grid-cols-1 lg:grid-cols-2 gap-4">
+          <div className="mt-10  grid grid-cols-2 gap-4">
             {homes.map((home, index) => (
               <img key={index} src={home} className="w-full"></img>
             ))}
           </div>
         </div>
 
-        <div className="mt-7">
-          <div className="relative float-right">
+        <div className="basis-1/2 mt-7 max-lg:flex max-lg:flex-col items-center justify-center relative">
+          <div className="relative float-right lg:mr-[-100px]">
             {/* <img src={luxury} className="xl:min-w-[600px] min-w-[400px]  z-30 relative block" /> */}
             <div>
-              <video
-                src=""
-                className="xl:min-w-[600px] min-w-[400px]  z-30 relative block min-h-[400px] object-cover"
-              />
+              <VideoPlay />
             </div>
-
-            <button className="absolute z-40 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ml-[45px] hover:scale-105 duration-300 transition-all">
-              <svg
-                width="137"
-                height="137"
-                viewBox="0 0 137 137"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle cx="68.2538" cy="68.2538" r="68.2538" fill="#ffffff" />
-                <path
-                  d="M53.0352 68.2533V61.3832C53.0352 52.8535 59.0754 49.3606 66.4665 53.6254L72.4296 57.0604L78.3927 60.4955C85.7838 64.7603 85.7838 71.7462 78.3927 76.011L72.4296 79.4461L66.4665 82.8811C59.0754 87.146 53.0352 83.653 53.0352 75.1233V68.2533Z"
-                  fill="#FF6B00"
-                />
-              </svg>
-            </button>
           </div>
 
-          <img src={sea} className=" -mt-80 float-right z-20"></img>
+          <img src={sea} className="z-[-100] absolute right-0"></img>
         </div>
       </div>
     </div>

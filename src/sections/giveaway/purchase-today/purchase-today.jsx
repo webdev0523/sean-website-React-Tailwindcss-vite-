@@ -8,7 +8,7 @@ import WinIcon from './win-icon'
 
 export default function PurchaseToday() {
 	return (
-		<div className='mt-[100px] md:mt-[200px]'>
+		<div className='mt-[50px] md:mt-[200px]'>
 			{/* Title */}
 			<div className='flex justify-center w-full'>
 				<div className="relative fit-content">
@@ -21,7 +21,7 @@ export default function PurchaseToday() {
 			</div>
 			{/* End Title */}
 
-			<div className='flex justify-center max-md:flex-col-reverse items-center max-md:p-8 mt-[100px] md:mx-[100px]'>
+			<div className='flex justify-center max-md:flex-col-reverse items-center max-md:p-8 mt-[30px] md:mt-[100px] md:mx-[100px]'>
 				{/* left content */}
 				<div className='basis-1/2 flex justify-center max-md:mt-10'>
 					<div className='relative w-fit'>
@@ -39,7 +39,7 @@ export default function PurchaseToday() {
 							<SaveIcon />
 						</div>
 						<div>
-							<p className='font-extrabold text-2xl leading-7'>SAVE</p>
+							<p className='font-extrabold text-2xl leading-7 max-md:text-xl'>SAVE</p>
 							<p className='font-normal text-lg leading-5 pt-4 text-[#060606B2]'>
 								Gain access to exclusive discounts to over 900+ businesses across &nbsp;
 								<span className='font-bold'>
@@ -55,7 +55,7 @@ export default function PurchaseToday() {
 							<WinIcon />
 						</div>
 						<div>
-							<p className='font-extrabold text-2xl leading-7'>WIN</p>
+							<p className='font-extrabold text-2xl leading-7 max-md:text-xl'>WIN</p>
 							<p className='font-normal text-lg leading-5 pt-4 text-[#060606B2]'>
 								Get your name placed in this draw to win 1ST: The Block House
 								<span className='font-bold'>#1 or $2 MIL</span> Cash. 2ND: <span className='font-bold'>$10K</span> to spend with our partners. 3RD: $5K to spend with our partners.
@@ -68,7 +68,7 @@ export default function PurchaseToday() {
 							<SaveIcon />
 						</div>
 						<div>
-							<p className='font-extrabold text-2xl leading-7'>JOIN</p>
+							<p className='font-extrabold text-2xl leading-7 max-md:text-xl'>JOIN</p>
 							<p className='font-normal text-lg leading-5 pt-4 text-[#060606B2]'>
 								Join Australia's most trusted, diverse and original automotive rewards club with Australia's most valuable and frequent prize giveaways
 							</p>
@@ -80,7 +80,7 @@ export default function PurchaseToday() {
 							<WinIcon />
 						</div>
 						<div>
-							<p className='font-extrabold text-2xl leading-7'>RECEIVE</p>
+							<p className='font-extrabold text-2xl leading-7 max-md:text-xl'>RECEIVE</p>
 							<p className='font-normal text-lg leading-5 pt-4 text-[#060606B2]'>
 								Access to all early bird offers to future promotional giveaways offering free triple entry packages
 							</p>

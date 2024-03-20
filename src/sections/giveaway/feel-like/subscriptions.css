@@ -1,0 +1,29 @@
+/* Hide the default checkbox */
+.custom-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+/* Style the custom checkbox */
+.custom-checkbox .checkmark {
+    display: block !important;
+}
+
+/* Style when the checkbox is checked */
+.custom-checkbox input[type="checkbox"]:checked+.checkmark {
+    background-color: black;
+    background-image: url("./checkbox1.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Style when the checkbox is checked */
+.custom-checkbox input[type="checkbox"]:checked+.checkmark1 {
+    background-color: #FF4D00;
+    background-image: url("./checkbox1.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.popup {
+    animation: comeFromBelow 0.5s ease forwards;
+}

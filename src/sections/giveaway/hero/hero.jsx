@@ -1,6 +1,6 @@
 import React from "react";
 import HeroVideo from "../../../assets/HeroVideo.png";
-import VideoPlay from "../../../assets/VideoPlay.svg";
+import preview from "../../../assets/VideoPlay.svg";
 import Union from "../../../assets/Union.svg";
 import SunVector from "../../../assets/Vector.svg";
 import WinladsLogo from "../../../assets/WinladsLogo.svg";
@@ -12,31 +12,35 @@ import Arrow from "../../../assets/Arrow.svg";
 import { Timer } from "../../../components/Timer";
 
 import lineImg from "../../../assets/images/Union (2).png";
+import VideoPlay from "./videoPlay";
 
 export default function Hero() {
   const deadline = new Date("2/23/2025");
 
   return (
-    <div className="flex flex-col md:flex-row">
-      <div className="w-full md:w-[48%] relative">
+    <div className="flex flex-col-reverse md:flex-row">
+
+      <div className="w-full md:w-[48%] relative  max-md:mt-24 max-md:h-[200px]">
         <div className="absolute bg-primary w-full h-full my-5 -z-10 hero-video-radius"></div>
         <div className="absolute bg-secondary w-full h-full my-10 -z-20 hero-video-radius"></div>
-        <div className="absolute w-full h-full flex items-center justify-center z-50">
+        {/* <div className="absolute w-full h-full flex items-center justify-center z-50">
           <button>
-            <img src={VideoPlay} alt="HeroVideo" />
+            <img src={preview} alt="HeroVideo" />
           </button>
-        </div>
-        <div className="h-full relative">
+        </div> */}
+        <div className="h-full relative  hero-video-radius flex items-center overflow-hidden">
           <div className="absolute w-full h-full bg-black/[.2] hero-video-radius" />
-          <img
+          {/* <img
             className="w-full h-full object-cover z-40 hero-video-radius"
             src={HeroVideo}
             alt="HeroVideo"
-          />
+          /> */}
+          <VideoPlay />
 
           <img src={lineImg} className="absolute bottom-0 left-0 translate-y-2/3 w-[50vw]" />
         </div>
       </div>
+
       <div className="w-full md:w-[52%] relative">
         <div className="absolute right-0">
           <img src={Union} />

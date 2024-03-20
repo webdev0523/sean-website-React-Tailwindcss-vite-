@@ -1,5 +1,4 @@
 import React from "react";
-import ImgPanel from "./ImgPanel";
 import Title from "../../../components/title";
 import Panel from "./panel";
 
@@ -8,6 +7,8 @@ import img2 from "../../../assets/images/2.jpg";
 import img3 from "../../../assets/images/3.jpg";
 import img4 from "../../../assets/images/4.jpg";
 import img5 from "../../../assets/images/5.jpg";
+
+import MobileResponsive from "./mobileResponsive";
 
 const Winlads = [
   { url: img1, left: 10, top: 40, rotate: -10 },
@@ -33,13 +34,13 @@ export default function WhatIsWinlads() {
         <div className="relative">
           <div className="absolute sm:right-[-10%] right-[0%] w-[199px] h-[74px] bg-[#FF6B00] origin-bottom -rotate-6"></div>
           {/* <p className="text-5xl font-black z-[100] relative leading-[64px]"> */}
-            <Title label="What Is Winlads" />
+          <Title label="What Is Winlads" />
           {/* </p> */}
         </div>
       </div>
 
       <div className="px-0 md:px-10 mx-10 mt-10">
-        <p className="font-Outfit text-[22px] text-center capitalize">
+        <p className="font-Outfit text-[22px] max-md:text-lg text-center capitalize">
           Everyone from driftworks was super helpful. i’ve heard this before
           from many people and that’s why i decided to buy through them! i ordered Stanceparts
           aircups for my car and they arrived damaged. UPS crushed the
@@ -51,7 +52,7 @@ export default function WhatIsWinlads() {
         </p>
       </div>
 
-      <div className="h-auto px-4 flex gap-4 md:min-h-[70vw] flex-col mt-8 relative max-w-full overflow-hidden">
+      <div className="max-md:!display-none h-auto px-4 flex gap-4 md:min-h-[70vw] flex-col mt-8 relative max-w-full overflow-hidden">
         {/* {[0, 1, 2, 3, 4].map((num) => (
           <ImgPanel order={num} key={num} />
         ))} */}
@@ -59,6 +60,10 @@ export default function WhatIsWinlads() {
           <Panel data={d} key={index} />
         ))}
       </div>
+
+      {/* mobile responsive */}
+      <MobileResponsive Winlads={Winlads} />
+      {/* end mobile responsive */}
     </div>
   );
 }

@@ -10,10 +10,12 @@ import img5 from '../../../assets/giveaway/roadmap/5.png'
 import img6 from '../../../assets/giveaway/roadmap/6.png'
 import vector1 from '../../../assets/giveaway/roadmap/vector1.svg'
 import bg from '../../../assets/giveaway/roadmap/bg.svg'
+import roadmap from '../../../assets/giveaway/roadmap/roadmap.png'
+
 
 export default function Roadmap() {
 	return (
-		<div className='mt-[100px] md:mt-[200px] relative min-w-[1280px] overflow-visibles'>
+		<div className='mt-[100px] md:mt-[200px] relative'>
 			<img src={bg} alt='bg' className='absolute top-[-300px] w-full z-[-1]' />
 			{/* Title */}
 			<div className='flex justify-center w-full'>
@@ -28,7 +30,7 @@ export default function Roadmap() {
 			{/* End Title */}
 
 			{/* Content */}
-			<div className='mt-[200px] mx-[200px] p-[35px] relative z-[100]'>
+			<div className=' max-xl:!display-none min-w-[800px] mt-[200px] mx-[200px] p-[35px] relative z-[100]'>
 				<img src={road} alt='road' className='w-full' />
 
 				<div className='absolute top-0 left-0'>
@@ -235,6 +237,14 @@ export default function Roadmap() {
 
 			</div>
 			{/* End Content */}
+
+			{/* mobile */}
+			<div className=' xl:!display-none mt-[50px] mx-6 p-[35px] relative z-[100]'>
+				<div>
+					<img src={roadmap} alt='roadmap' />
+				</div>
+			</div>
+			{/* End mobile */}
 
 		</div >
 	)
