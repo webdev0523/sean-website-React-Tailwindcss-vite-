@@ -18,14 +18,14 @@ const Subscription = ({ property, className, style, setIsOpen }) => {
       )}
 
       <div
-        className={`w-[342px] md:h-[404px] max-md:w-[299px] rounded-2xl ${property.backgroundColor} ${property.borderColor} border-2 `}
+        className={`w-[342px] max-md:w-[299px] rounded-2xl ${property.backgroundColor} ${property.borderColor} border-2 `}
       >
         <div className="flex items-stretch pb-2">
           <div className="w-2/4 ml-8 mt-8 text-left">
             <h1 className="text-2xl text font-extrabold">{property.title}</h1>
             <p className="text-2xl font-light">Tier</p>
           </div>
-          <div className="w-2/4 ml-8 mt-8 text-left">
+          <div className="w-2/4 mt-8 text-right mr-8">
             <h1 className="text-[35px] font-sans font-black">
               <span className="font-black">{property.number}</span>{" "}
               <span className="text-[15px] font-light">Free</span>
@@ -38,7 +38,8 @@ const Subscription = ({ property, className, style, setIsOpen }) => {
             Accumulation Entries
           </p>
         </div>
-        <div className="pl-[29px] text-sm h-[105px] pt-[9px]">
+
+        <div className="px-[12px] text-sm h-[105px] pt-[9px]">
           <div className="flex items-start py-1">
             <img src={check}></img>
             <p>
@@ -60,15 +61,15 @@ const Subscription = ({ property, className, style, setIsOpen }) => {
             </p>
           </div>
         </div>
-        <div className="mt-[23px] ml-[14px] max-md:m-2">
-          <button className=" border border-black/[.13] rounded-lg  text-sm  px-[116px] font-normal py-[14px] max-md:text-xs max-md:px-5 max-md:w-full ">
+        <div className="mt-[23px] max-md:m-2 px-2">
+          <button className=" border border-black/[.13] rounded-lg text-sm font-normal py-[14px] max-md:text-xs max-md:px-5 w-full ">
             View More...
           </button>
         </div>
-        <div className="mt-[19px] ml-[14px] max-md:m-2">
+        <div className="mt-[19px] m-2">
           <button
             onClick={() => setIsOpen(true)}
-            className={`border hover:opacity-75 hover:-translate-y-0.5 border-black/[.13] rounded-lg text-white  text-sm  px-[105px] font-bold py-[14px] max-md:text-xs max-md:px-5 max-md:w-full ${property.buttonColor}`}
+            className={`border hover:opacity-75 hover:-translate-y-0.5 border-black/[.13] rounded-lg text-white  text-sm w-full font-bold py-[14px] max-md:text-xs max-md:px-5 ${property.buttonColor}`}
           >
             CHOOSE PLAN
           </button>
