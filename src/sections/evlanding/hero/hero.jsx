@@ -10,7 +10,7 @@ import { Timer1 } from "../../../components/Timer1";
 import Vector from "./vector";
 
 export default function Hero() {
-  const deadline = new Date("2/23/2025");
+  const deadline = new Date("Sat May 25 2024 13:59:29 GMT-0700");
 
   return (
     <div className="bg-[url('/hero/Mask_group.png')] bg-center bg-no-repeat bg-cover bg-[length:100%_100%] relative  max-md:overflow-hidden">

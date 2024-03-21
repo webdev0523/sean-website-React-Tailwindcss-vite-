@@ -18,10 +18,10 @@ export default function DrawDetails() {
                 <p className=' text-5xl max-md:text-2xl font-black font-["Neuething"] max-md:text-center'>DETAILS</p>
                 <ul className='list-image-[url(/icons/bullet.svg)] pl-5'>
                     <li className='mt-7 font-normal text-[18px] '>Valid to all Australian residents</li>
-                    <li className='mt-5 font-normal text-[18px]'>Winner announced 25th of February, 2024 8:30PM via Facebook live</li>
-                    <li className='mt-5 font-normal text-[18px] '>​The prizes will be drawn using our Digital Draw System</li>
-                    <li className='mt-5 font-normal text-[18px] '>​​The winner will be contacted immediately via phone</li>
-                    <li className='mt-5 font-normal text-[18px] '>​​The Cash prize will be transferred to your nominated bank account within 48 hours.</li>
+                    <li className='mt-5 font-normal text-[18px]'>The winner will be selected via random name generator</li>
+                    <li className='mt-5 font-normal text-[18px] '>Winner will be announced Sunday 26th of May via Facebook live</li>
+                    <li className='mt-5 font-normal text-[18px] '>Winner will be contacted live during the draw via phone</li>
+                    {/* <li className='mt-5 font-normal text-[18px] '>​​The Cash prize will be transferred to your nominated bank account within 48 hours.</li> */}
                 </ul>
             </div>
         </div>

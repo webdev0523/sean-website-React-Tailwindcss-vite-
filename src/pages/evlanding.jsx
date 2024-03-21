@@ -31,7 +31,7 @@ export default function EVLandingPage() {
       <DrawDetails />
       <Purchasing />
       <Roadmap />
-      <PurchaseToday />
+      {/* <PurchaseToday /> */}
       <OurPartners />
       <PastWinners />
       {/* <Faqs /> */}

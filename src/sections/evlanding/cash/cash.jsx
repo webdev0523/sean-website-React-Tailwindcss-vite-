@@ -19,13 +19,10 @@ export default function Cash() {
       {/* Sentence */}
       <div className="flex flex-col justify-center items-center w-full bg-[#FF4C00] md:min-h-[436px] p-16 max-md:min-h-[351px]">
         <div>
-          <Title label="whoever wins can" className="text-white capitalize  origin-bottom -rotate-[2.54deg] drop-shadow-[3px_-3px_0px_rgba(0,0,0)] max-md:text-2xl" />
+          <Title label="THE CHOICE IS YOURS" className="text-white capitalize  origin-bottom -rotate-[2.54deg] drop-shadow-[3px_-3px_0px_rgba(0,0,0)] max-md:text-2xl" />
         </div>
         <div>
-          <Title label="Take cash if don’t" className="text-white capitalize origin-bottom -rotate-[2.54deg] drop-shadow-[3px_-3px_0px_rgba(0,0,0)] max-md:text-2xl" />
-        </div>
-        <div>
-          <Title label="want the car" className="text-white capitalize origin-bottom -rotate-[2.54deg] drop-shadow-[3px_-3px_0px_rgba(0,0,0)] max-md:text-2xl" />
+          <Title label="CAR OR CASH" className="text-white capitalize origin-bottom -rotate-[2.54deg] drop-shadow-[3px_-3px_0px_rgba(0,0,0)] max-md:text-2xl" />
         </div>
       </div>
 

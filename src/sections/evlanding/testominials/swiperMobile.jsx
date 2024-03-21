@@ -40,22 +40,13 @@ export default function SwiperMobile({cards}) {
                 <div className="max-w-[500px] overflow-hidden">
                     {cards.map((card, i) => (
                         <SwiperSlide key={card.id} className="">
-                            <div className="p-8 bg-[#ECF6F8EB] rounded-2xl max-w-[668px] relative drop-shadow-3xl max-md:text-center">
+                            <div className="p-8 bg-[#ECF6F8EB] rounded-2xl max-w-[668px] relative drop-shadow-3xl max-md:text-center h-[350px] overflow-hidden">
                                 <p className="font-['Axiforma'] font-black text-3xl mt-8 max-md:text-xl">
-                                    Greg Wheatley
-                                </p>
-                                <p className="font-['Axiforma'] font-normal text-xl mt-2 max-md:text-sm">
-                                    One Off Purchase {card.id}
+                                    {card.userName}
                                 </p>
                                 <br />
                                 <p className="font-['Axiforma'] font-light text-sm md:text-xl text-justify">
-                                    Everyone from driftworks was super helpful. i’ve heard this
-                                    before from many people and that’s why i decided to buy
-                                    through them! i ordered Stanceparts aircups for my car and
-                                    they arrived damaged. UPS crushed the box and snapped a lead
-                                    line out of the compressor. Chris, Alex and everyone else at
-                                    DW were very very helpful getting me a new compressor, and
-                                    they did it fast! thanks again guys!
+                                    {card.review}
                                 </p>
                                 <img src={icon} alt="icon" className="absolute top-0 right-0" />
                             </div>

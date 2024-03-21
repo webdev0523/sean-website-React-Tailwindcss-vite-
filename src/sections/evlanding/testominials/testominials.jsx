@@ -10,18 +10,28 @@ import SwiperDesktop from "./swiperDesktop";
 const cards = [
   {
     id: 1,
+    userName: "Lou Anderson",
+    review: "Loveliest guys creating a great community. I'd just moved into a new place and won $300 to put towards bills, which was super handy! Would recommend signing up - you've gotta be in it to win it!"
   },
   {
     id: 2,
+    userName: "Switch Stephens",
+    review: "honesty best bunch of guys running this, they called me and told me I had won 1500 and it was that little boost I needed to get my through the month I can't thank you boys enough"
   },
   {
     id: 3,
+    userName: "MeriaNa Tjhia",
+    review: "I am very happy because I won %500 gift card from the giveaway. Thank you so much, I am very lucky"
   },
   {
     id: 4,
+    userName: "Lou Anderson",
+    review: "Loveliest guys creating a great community. I'd just moved into a new place and won $300 to put towards bills, which was super handy! Would recommend signing up - you've gotta be in it to win it!"
   },
   {
     id: 5,
+    userName: "Switch Stephens",
+    review: "honesty best bunch of guys running this, they called me and told me I had won 1500 and it was that little boost I needed to get my through the month I can't thank you boys enough"
   },
 ];
 

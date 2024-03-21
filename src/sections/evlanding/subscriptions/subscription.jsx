@@ -61,11 +61,13 @@ const Subscription = ({ property, className, style, setIsOpen }) => {
             </p>
           </div>
         </div>
+
         <div className="mt-[23px] max-md:m-2 px-2">
           <button className=" border border-black/[.13] rounded-lg text-sm font-normal py-[14px] max-md:text-xs max-md:px-5 w-full ">
             View More...
           </button>
         </div>
+        
         <div className="mt-[19px] m-2">
           <button
             onClick={() => setIsOpen(true)}

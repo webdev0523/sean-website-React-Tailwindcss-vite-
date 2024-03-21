@@ -11,21 +11,21 @@ export default function Purchasing() {
 			<div className='flex justify-center w-full'>
 				<div className="relative fit-content">
 					<Title
-						label="PURCHASING A PACKAGE"
+						label="PURCHASE YOUR MEMBERSHIP TODAY"
 						className="block-inline leading-[54px]"
 					/>
 					<Title
-						label="TODAY WILL GIVE YOU"
+						label="AND REAP THE REWARDS"
 						className="block-inline leading-[54px]"
 					/>
-					<Title
+					{/* <Title
 						label="ACCESS TO THE LMCT+"
 						className="block-inline leading-[54px]"
 					/>
 					<Title
 						label="PLATFORM"
 						className="block-inline leading-[54px]"
-					/>
+					/> */}
 					<div className="absolute top-0 right-[0%] w-[199px]  h-[74px] max-md:w-[99px] max-md:h-[40px] bg-[#FF6B00] origin-bottom -rotate-6 z-[-1]"></div>
 				</div>
 			</div>
@@ -33,7 +33,7 @@ export default function Purchasing() {
 
 			{/* Content */}
 			<div className='mt-10 md:mx-24 mx-8 '>
-				<p className='mx-auto max-w-[860px] font-light text-2xl max-md:text-lg text-center capitalize'>We're committed to helping you save money at EVERY store you shop at within Australia as easily as possible, and are working towards our goal of being in EVERY store / business within Australia!</p>
+				<p className='mx-auto max-w-[860px] font-light text-2xl max-md:text-lg text-center capitalize'>Doesn’t get much better – Access to all of our partner discounts and accumulating entries into our weekly and monthly draws. How good is that!!!!</p>
 			</div>
 			{/* End Content */}
 

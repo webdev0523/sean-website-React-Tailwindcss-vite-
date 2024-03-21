@@ -86,11 +86,11 @@ export default function FeelLike() {
       <div className="flex justify-center my-[100px] max-md:mb-8 relative">
         <div className="relative">
           <Title
-            label="Feel like getting"
+            label="Want to test the waters with"
             className="origin-bottom -rotate-[2.54deg]"
           />
           <Title
-            label="an one off entry?"
+            label="just a one off entry?"
             className="origin-bottom -rotate-[2.54deg]"
           />
           <div className="absolute right-0 top-[100px] max-md:top-12 w-full flex justify-end">

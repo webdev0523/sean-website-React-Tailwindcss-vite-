@@ -35,18 +35,9 @@ export default function WhatIsWinlads() {
 
       <div className="px-0 md:px-10 mx-10 mt-10">
         <p className="font-Outfit text-[22px] text-center capitalize max-md:text-sm max-md:font-light max-md:leading-5">
-          Everyone from driftworks was super helpful. i’ve heard this before
-          from many people and that’s why i decided to buy through them! i
-          ordered Stanceparts aircups for my car and they arrived damaged. UPS
-          crushed the box and snapped a lead line out of the compressor. Chris,
-          Alex and everyone else at DW were very very helpful getting me a new
-          compressor, and they did it fast! thanks again guys! Everyone from
-          driftworks was super helpful. i’ve heard this before from many people
-          and that’s why i decided to buy through them! i ordered Stanceparts
-          aircups for my car and they arrived damaged. UPS crushed the box and
-          snapped a lead line out of the compressor. Chris, Alex and everyone
-          else at DW were very very helpful getting me a new compressor, and
-          they did it fast! thanks again guys!
+          Welcome to Winlads, where rewards, excitement and pleasure meet in the middle. We are here to reward our people – with weekly minor draws and monthly major draws, the chances to win will just keep coming and coming. For our members we offer accumulating packages, meeting your entries will keep multiplying EVERY SINGE MONTH.
+          <br/><br/>
+          Not into the membership vibe? We have you covered. We offer one of packages to all and prizes to cater to all. Join us at Winlads and find out for yourself how incredible the opportunities to win are.
         </p>
       </div>
 
