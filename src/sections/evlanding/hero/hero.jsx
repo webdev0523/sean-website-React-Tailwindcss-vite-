@@ -52,7 +52,7 @@ export default function Hero() {
         <div className="flex justify-center max-md:overflow-hidden ">
           <div className="max-md:flex max-md:justify-center">
             <img src={car1} alt="car1" className="car1 max-md:w-[224px] max-md:h-[128px]" />
-            <img src={car2} alt="car2" className="md:mt-[-74px] max-md:w-[300px] max-md:h-[186px] max-md:ml-[-100px]" />
+            <img src={car2} alt="car2" className="md:mt-[-74px] max-md:w-[300px] max-md:h-[186px] max-md:ml-[-50px]" />
           </div>
         </div>
       </div>

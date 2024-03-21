@@ -83,10 +83,10 @@ const WinA = ({ property, className, style }) => {
           </div>
           <div className="text-center mt-16 relative origin-bottom -rotate-[2.54deg] max-lg:mt-[-50px] max-lg:ml-[100px]">
             <p className="font-['Neuething'] text-4xl drop-shadow-[2px_-2px_0px_rgba(255,255,255)] max-md:text-[19px]">
-              Or <span className="text-4xl max-md:text-[19px] ">50000</span>
+              Or <span className="text-4xl max-md:text-[19px] ">$50000</span>
             </p>
             <p className="font-['Neuething'] font-black text-4xl mt-4 max-md:mt-0 drop-shadow-[2px_-2px_0px_rgba(255,255,255)] max-md:text-[19px] ">
-              USD CASH
+              CASH
             </p>
             <div className="bg-[#74E486EE] w-[126px] h-[126px] rounded-full absolute top-0 left-[50px] z-[-1] max-md:w-[74px] max-md:h-[74px]"></div>
           </div>
