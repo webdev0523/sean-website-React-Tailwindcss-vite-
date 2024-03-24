@@ -21,7 +21,7 @@ export default function Hero() {
           <img src={logo} alt="logo" className="w-[160px] h-[30px]" />
         </div>
         <div>
-          <Timer1 deadline={deadline} />
+          {/* <Timer1 deadline={deadline} /> */}
         </div>
       </div>
 

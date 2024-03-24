@@ -85,24 +85,24 @@ export default function PastWinners() {
       </div>
 
       {/* grid-cols-1 sm:grid-cols-2 md: */}
-      <div
+      {/* <div
         className={`max-md:!display-none grid grid-cols-3 gap-4 max-w-[1200px] mx-auto duration-[2000ms] relative max-md:grid-cols-4 max-md:gap-1 md:p-4 ${isIntersecting ? "opacity-1" : "opacity-0"
           }`}
       >
         {winners.map((w, index) => (
           <Winnder key={index} data={w} />
         ))}
-      </div>
+      </div> */}
 
       {/* mobile responsive */}
-      <div
+      {/* <div
         className={`md:!display-none grid grid-cols-3 gap-4 max-w-[1200px] mx-auto duration-[2000ms] relative max-md:grid-cols-4 max-md:gap-1 md:p-4 ${isIntersecting ? "opacity-1" : "opacity-0"
           }`}
       >
         {winners1.map((w, index) => (
           <Winnder key={index} data={w} />
         ))}
-      </div>
+      </div> */}
       {/* end mobile responsive */}
 
       <img

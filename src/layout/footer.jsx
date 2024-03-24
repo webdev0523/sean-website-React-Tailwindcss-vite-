@@ -14,7 +14,7 @@ export default function Footer() {
 
       <div className="relative flex py-4 items-center justify-between max-lg:flex-col ">
         <div className="text-lg text-[#A7ADAD] max-lg:order-last ">
-          © 2024 <span className="text-[#FF6B00] font-bold">Winalds</span>. All
+          © 2024 <span className="text-[#FF6B00] font-bold">Winlads</span>. All
           rights reserved.
         </div>
 
