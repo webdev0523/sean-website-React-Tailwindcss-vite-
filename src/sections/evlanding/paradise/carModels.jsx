@@ -65,7 +65,7 @@ export default function CarModel() {
                     <div className="mt-3">
                         <p>
                             <span className="font-medium text-4xl text-justify max-lg:text-2xl">{isuzuModel.speed}</span>
-                            <span className="font-light text-2xl text-justify max-lg:text-base">mph</span>
+                            <span className="font-light text-2xl text-justify max-lg:text-base">km/h</span>
                         </p>
                         <p className="font-normal text-2xl max-lg:text-xs">Top Speed</p>
                     </div>
@@ -74,7 +74,7 @@ export default function CarModel() {
                             <span className="font-medium text-4xl text-justify max-lg:text-2xl">{isuzuModel.mph}</span>
                             <span className="font-light text-2xl text-justify max-lg:text-base">sec</span>
                         </p>
-                        <p className="font-normal text-2xl max-lg:text-xs">{isuzuModel.startMph}-{isuzuModel.endMph} mph</p>
+                        <p className="font-normal text-2xl max-lg:text-xs">{isuzuModel.startMph}-{isuzuModel.endMph} km/h</p>
                     </div>
                 </div>
                 <div className="flex justify-center max-md:justify-start mt-16 max-lg:mx-6">
@@ -111,7 +111,7 @@ export default function CarModel() {
                     <div className="mt-3">
                         <p>
                             <span className="font-medium text-4xl text-justify max-lg:text-2xl">{teslaModel.speed}</span>
-                            <span className="font-light text-2xl text-justify max-lg:text-base">mph</span>
+                            <span className="font-light text-2xl text-justify max-lg:text-base">km/h</span>
                         </p>
                         <p className="font-normal text-2xl max-lg:text-xs">Top Speed</p>
                     </div>
@@ -120,7 +120,7 @@ export default function CarModel() {
                             <span className="font-medium text-4xl text-justify max-lg:text-2xl">{teslaModel.mph}</span>
                             <span className="font-light text-2xl text-justify max-lg:text-base">sec</span>
                         </p>
-                        <p className="font-normal text-2xl max-lg:text-xs">{teslaModel.startMph}-{teslaModel.endMph} mph</p>
+                        <p className="font-normal text-2xl max-lg:text-xs">{teslaModel.startMph}-{teslaModel.endMph} km/h</p>
                     </div>
                 </div>
                 <div className="flex justify-center max-md:justify-start mt-16 max-lg:mx-6">
