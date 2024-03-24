@@ -33,7 +33,7 @@ export default function Purchasing() {
 
 			{/* Content */}
 			<div className='mt-10 md:mx-24 mx-8 '>
-				<p className='mx-auto max-w-[860px] font-light text-2xl max-md:text-lg text-center capitalize'>Doesn’t get much better – Access to all of our partner discounts and accumulating entries into our weekly and monthly draws. How good is that!!!!</p>
+				<p className='mx-auto max-w-[860px] font-light text-2xl max-md:text-lg text-center'>Doesn’t get much better – Access to all of our partner discounts and accumulating entries into our weekly and monthly draws. How good is that!!!!</p>
 			</div>
 			{/* End Content */}
 

@@ -7,6 +7,7 @@ import img4 from '../../../assets/giveaway/roadmap/4.png'
 import img5 from '../../../assets/giveaway/roadmap/5.png'
 import img6 from '../../../assets/giveaway/roadmap/6.png'
 
+//  - 50% Off One-Off Packages Will Lanuch On This Date Straight Away
 const points = [
     {
         img: img1,
@@ -17,7 +18,7 @@ const points = [
     {
         img: img2,
         title: "17th Of March",
-        content: "Bali Campaign Launch - 50% Off One-Off Packages Will Lanuch On This Date Straight Away",
+        content: "Bali Campaign Launch",
         color: ""
     },
     {

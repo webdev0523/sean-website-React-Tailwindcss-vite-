@@ -8,7 +8,7 @@ export default function HowToEnter() {
   return (
     <div className="mt-24">
       <div className="flex justify-center items-center bg-[#FF4C00] w-full md:h-[70px] relative">
-        <p className="font-['Axiforma'] font-normal text-base max-md:text-xs max-md:p-3 capitalize text-white text-center">Receive invitations to exclusive Winlads VIP events and meet-ups!</p>
+        <p className="font-['Axiforma'] font-normal text-base max-md:text-xs max-md:p-3 text-white text-center">Receive invitations to exclusive Winlads VIP events and meet-ups!</p>
         <img src={lines} alt="lines" className="absolute" />
       </div>
 

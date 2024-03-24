@@ -11,15 +11,15 @@ import Popup from "./popup";
 
 export const properties = [
   {
-    borderColor: "border-[#5EC1DC]",
-    backgroundColor: "bg-[#EFF9FB]",
-    title: "Platinum",
-    number: "10",
+    borderColor: "border-[#296FB8]",
+    backgroundColor: "bg-[#EAF1F8]",
+    title: "Starter",
+    number: "1",
     price: "49.99",
     referral: "10%",
     discounts: "Partner Store Discounts: ",
     discountsPercent: "10%-15%",
-    buttonColor: "bg-[#5EC1DC]",
+    buttonColor: "bg-[#296FB8]",
   },
   {
     borderColor: "border-[#FE705C]",
@@ -31,6 +31,17 @@ export const properties = [
     discounts: "Partner Store Discounts: ",
     discountsPercent: "10%",
     buttonColor: "bg-[#FE705C]",
+  },
+  {
+    borderColor: "border-[#5EC1DC]",
+    backgroundColor: "bg-[#EFF9FB]",
+    title: "Platinum",
+    number: "10",
+    price: "49.99",
+    referral: "10%",
+    discounts: "Partner Store Discounts: ",
+    discountsPercent: "10%-15%",
+    buttonColor: "bg-[#5EC1DC]",
   },
   {
     borderColor: "border-[#FFBC0B]",
@@ -53,17 +64,6 @@ export const properties = [
     discounts: "Customized Partner Store Discount Rates Ranging Upto 20%",
     discountsPercent: "",
     buttonColor: "bg-[#1A1D21]",
-  },
-  {
-    borderColor: "border-[#296FB8]",
-    backgroundColor: "bg-[#EAF1F8]",
-    title: "Starter",
-    number: "1",
-    price: "49.99",
-    referral: "10%",
-    discounts: "Partner Store Discounts: ",
-    discountsPercent: "10%-15%",
-    buttonColor: "bg-[#296FB8]",
   },
 ];
 

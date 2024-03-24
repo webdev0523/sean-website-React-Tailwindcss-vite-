@@ -56,7 +56,8 @@ export default function Roadmap() {
 						<div className='flex items-start absolute bottom-[-150%] left-[-150%] max-w-[230px]'>
 							<div>
 								<p className=' font-medium text-2xl'>17th Of March</p>
-								<p className=' font-normal text-base'>Bali Campaign Launch - 50% Off One-Off Packages Will Lanuch On This Date Straight Away</p>
+								<p className=' font-normal text-base'>Bali Campaign Launch</p>
+								{/*  - 50% Off One-Off Packages Will Lanuch On This Date Straight Away */}
 							</div>
 							<div className=''>
 								<svg width="66" height="23" viewBox="0 0 66 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -231,7 +232,7 @@ export default function Roadmap() {
 							</div>
 							<div>
 								<p className=' font-medium text-2xl'>May 26th</p>
-								<p className=' font-normal text-base capitalize'>2024 Tesla Model Y, Isuzu D-Max X-Terrain or $50,000 Winner Drawn via Facebook Live</p>
+								<p className=' font-normal text-base'>2024 Tesla Model Y, Isuzu D-Max X-Terrain or $50,000 Winner Drawn via Facebook Live</p>
 							</div>
 						</div>
 					</div>

@@ -21,7 +21,7 @@ const cards = [
   {
     id: 3,
     userName: "MeriaNa Tjhia",
-    review: "I am very happy because I won %500 gift card from the giveaway. Thank you so much, I am very lucky"
+    review: "I am very happy because I won $500 gift card from the giveaway. Thank you so much, I am very lucky"
   },
   {
     id: 4,

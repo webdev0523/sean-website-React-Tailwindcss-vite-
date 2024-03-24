@@ -17,7 +17,7 @@ export default function MobileResponsive({isIntersecting, setIsOpen}) {
                 }`}
         >
             <Swiper
-                initialSlide={0}
+                initialSlide={2}
                 effect={"creative"}
                 grabCursor={true}
                 centeredSlides={true}

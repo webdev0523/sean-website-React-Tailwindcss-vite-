@@ -27,14 +27,14 @@ export default function WhatIsWinlads() {
             label="What Is Winlads"
             className="origin-bottom -rotate-[2.54deg] max-md:text-2xl max-md:font-black"
           />
-          <div className="absolute right-0 top-7 max-md:top-4 w-full flex justify-end">
+          <div className="absolute right-0 bottom-[-70px] max-md:bottom-4 w-full flex justify-end">
             <img src={curve} alt="curve" className="max-md:w-[167px] " />
           </div>
         </div>
       </div>
 
       <div className="px-0 md:px-10 mx-10 mt-10">
-        <p className="font-Outfit text-[22px] text-center capitalize max-md:text-sm max-md:font-light max-md:leading-5">
+        <p className="font-Outfit text-[22px] text-center max-md:text-sm max-md:font-light max-md:leading-5">
           Welcome to Winlads, where rewards, excitement and pleasure meet in the middle. We are here to reward our people – with weekly minor draws and monthly major draws, the chances to win will just keep coming and coming. For our members we offer accumulating packages, meeting your entries will keep multiplying EVERY SINGE MONTH.
           <br/><br/>
           Not into the membership vibe? We have you covered. We offer one of packages to all and prizes to cater to all. Join us at Winlads and find out for yourself how incredible the opportunities to win are.
