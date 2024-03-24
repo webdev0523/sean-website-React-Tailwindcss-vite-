@@ -89,7 +89,7 @@ export default function Roadmap() {
 						<img src={img4} alt='img4' className='hover:scale-110 duration-1000' />
 						<div className='flex items-center absolute top-[-50%] left-[-200%] max-w-[250px]'>
 							<div>
-								<p className=' font-medium text-2xl font-[#FF4C00]'>31st of March</p>
+								<p className=' font-medium text-2xl text-[#FF4C00]'>31st of March</p>
 								<p className=' font-normal text-base'>$500 Flight Centre Voucher (Members only)</p>
 							</div>
 							<div className=''>
@@ -111,8 +111,8 @@ export default function Roadmap() {
 								</svg>
 							</div>
 							<div>
-								<p className=' font-medium text-2xl font-[#FF4C00]'>7th April</p>
-								<p className=' font-normal text-base'>$1500 Cash (Members only)</p>
+								<p className=' font-medium text-2xl text-[#FF4C00]'>7th April</p>
+								<p className=' font-normal text-base '>$1500 Cash (Members only)</p>
 							</div>
 						</div>
 					</div>
@@ -145,7 +145,7 @@ export default function Roadmap() {
 								</svg>
 							</div>
 							<div>
-								<p className=' font-medium text-2xl'>21st April</p>
+								<p className=' font-medium text-2xl text-[#FF4C00]'>21st April</p>
 								<p className=' font-normal text-base'>$1000 Cash (Members only)</p>
 							</div>
 						</div>
@@ -157,7 +157,7 @@ export default function Roadmap() {
 						<img src={img6} alt='img8' className='hover:scale-110 duration-1000' />
 						<div className='flex items-center absolute top-[100%] right-[100%] min-w-[200px]'>
 							<div>
-								<p className=' font-medium text-2xl'>28st April</p>
+								<p className=' font-medium text-2xl text-[#FF4C00]'>28st April</p>
 								<p className=' font-normal text-base'>5-10 winners selected via Facebook Live (Members only)</p>
 							</div>
 							<div className=''>
@@ -174,7 +174,7 @@ export default function Roadmap() {
 						<img src={img5} alt='img9' className='hover:scale-110 duration-1000' />
 						<div className='flex items-center absolute top-[-50%] right-[100%] min-w-[200px]'>
 							<div>
-								<p className=' font-medium text-2xl'>5th May</p>
+								<p className=' font-medium text-2xl text-[#FF4C00]'>5th May</p>
 								<p className=' font-normal text-base'>$1500 Cash (Members only)</p>
 							</div>
 							<div className=''>
@@ -191,7 +191,7 @@ export default function Roadmap() {
 						<img src={img4} alt='img10' className='hover:scale-110 duration-1000' />
 						<div className='flex items-center absolute top-[-50%] right-[100%] min-w-[200px]'>
 							<div>
-								<p className=' font-medium text-2xl'>12th May</p>
+								<p className=' font-medium text-2xl text-[#FF4C00]'>12th May</p>
 								<p className=' font-normal text-base'>Go-karting event giveaway (Members only)</p>
 							</div>
 							<div className=''>
@@ -213,7 +213,7 @@ export default function Roadmap() {
 								</svg>
 							</div>
 							<div>
-								<p className=' font-medium text-2xl'>19th May</p>
+								<p className=' font-medium text-2xl text-[#FF4C00]'>19th May</p>
 								<p className=' font-normal text-base'>$1000 Cash (Members only)</p>
 							</div>
 						</div>

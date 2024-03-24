@@ -26,13 +26,15 @@ export default function VideoPlay() {
             <div className="flex flex-col-reverse lg:flex-row justify-center">
 
                 <div className="basis-1/2 px-4 sm:px-28 mt-[200px] max-lg:mt-10 ">
-                    <p className="font-light text-xl leading-8 max-md:leading-5 text-justify capitalize max-lg:text-center">
+                    <p className="font-light text-xl leading-8  text-justify capitalize">
                         Welcome to our BIGGEST giveaway yet! We are offering three irresistible options: A brand New Tesla Model Y, a brand-new Isuzu D-Max or a whopping $50,000 in cold, hard cash.
                     </p>
-                    <p className="font-light text-xl leading-8 max-md:leading-5 text-justify capitalize max-lg:text-center">
+                    <br />
+                    <p className="font-light text-xl leading-8  text-justify capitalize">
                         Whether you have a need for speed, crave the outdoor adventures or simply desire the flexibility that a hefty cash prize provides, our giveaway has something for everyone.
                     </p>
-                    <p className="font-light text-xl leading-8 max-md:leading-5 text-justify capitalize max-lg:text-center">
+                    <br />
+                    <p className="font-light text-xl leading-8  text-justify capitalize">
                         Buckle up for the chance of a lifetime, where luxury, power, and financial freedom wait for ONE lucky winner. And here's the twist – if neither car suits your style, you have the option to take home the incredible cash prize. Don't let this opportunity slip away; make 2024 your best year yet!
                     </p>
                     <button className="w-full p-6 bg-[#56E6E6] rounded-full border border-black font-bold text-xl mt-[75px] relative z-[100]  hover:opacity-80"><span className="drop-shadow-[1px_-1px_0px_rgba(255,255,255)]">ENTER NOW</span></button>
