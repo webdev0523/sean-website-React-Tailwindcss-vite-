@@ -24,11 +24,10 @@ export default function EVLandingPage() {
       <Hero />
       <Paradise />
       <FeelLike />
-      <Subscriptions />
       <HowToEnter />
       <WhatIsWinlads />
       <Cash />
-      {/* <FeelLike /> */}
+      <Subscriptions />
       <DrawDetails />
       <Purchasing />
       <Roadmap />

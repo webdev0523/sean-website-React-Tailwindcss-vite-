@@ -86,7 +86,7 @@ export default function Subscriptions() {
       <div className="flex justify-center my-[100px] max-md:my-12 relative">
         <div className="relative ">
           {/* <p className="text-5xl font-black z-[100] relative leading-[64px]"> */}
-          <Title label="One time Entry Options" className="origin-bottom -rotate-[2.54deg]" />
+          <Title label="Free entries" className="origin-bottom -rotate-[2.54deg]" />
           {/* </p> */}
           <div className="absolute right-0 top-7 max-sm:top-10 w-full flex max-md:justify-center justify-end">
             <img src={curve} alt="curve" className="max-md:w-[167px] " />

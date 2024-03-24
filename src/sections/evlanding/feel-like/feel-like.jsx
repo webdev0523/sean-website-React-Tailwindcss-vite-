@@ -85,14 +85,14 @@ export default function FeelLike() {
 
       <div className="flex justify-center my-[100px] max-md:mb-8 relative">
         <div className="">
-          {/* <Title
+          <Title
             label="Want to test the waters with"
             className="origin-bottom -rotate-[2.54deg]"
-          /> */}
+          />
           <div className="flex justify-center">
             <div className="relative w-fit">
               <Title
-                label="Free entries"
+                label="One of Entries part"
                 className="origin-bottom -rotate-[2.54deg] w-fit"
               />
               <div className="absolute right-0 bottom-[-30px] md:bottom-[-90px]">
