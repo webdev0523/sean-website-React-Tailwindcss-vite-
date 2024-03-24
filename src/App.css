@@ -133,15 +133,39 @@
 .scrolling-text-left {
     white-space: nowrap;
     /* Prevents wrapping of the text */
-    animation: scroll-left 20s linear infinite;
+    animation: scroll-left-text 20s linear infinite;
     /* Adjust duration and timing function as needed */
 }
 
 .scrolling-text-right {
     white-space: nowrap;
     /* Prevents wrapping of the text */
-    animation: scroll-right 20s linear infinite;
+    animation: scroll-right-text 20s linear infinite;
     /* Adjust duration and timing function as needed */
+}
+
+@keyframes scroll-left-text {
+    0% {
+        transform: translateX(100%);
+        /* Start from the right side */
+    }
+
+    100% {
+        transform: translateX(-100%);
+        /* Move to the left side */
+    }
+}
+
+@keyframes scroll-right-text {
+    0% {
+        transform: translateX(-100%);
+        /* Start from the right side */
+    }
+
+    100% {
+        transform: translateX(100%);
+        /* Move to the left side */
+    }
 }
 
 @keyframes scroll-left {

@@ -6,7 +6,7 @@ import isuzu from "../../../assets/icons/isuzu.svg";
 import tesla from "../../../assets/icons/tesla.svg";
 
 const isuzuModel = {
-    name: "D-MAX X Terrain",
+    name: "D-MAX X-Terrain",
     range: "600+",
     speed: "240",
     mph: "9.8",

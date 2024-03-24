@@ -65,6 +65,9 @@ const WinA = ({ property, className, style }) => {
             <p className="font-['Neuething'] text-4xl mt-4 max-md:mt-0 drop-shadow-[2px_-2px_0px_rgba(255,255,255)]  font-black max-md:text-[19px] ">
               Isuzu DMax
             </p>
+            <p className="font-['Neuething'] text-4xl mt-4 max-md:mt-0 drop-shadow-[2px_-2px_0px_rgba(255,255,255)]  font-black max-md:text-[19px] ">
+              X-Terrain
+            </p>
             <div className="bg-[#56E6E6A0] w-[126px] h-[126px] rounded-full absolute top-0 right-[50px] z-[-1] max-md:w-[74px] max-md:h-[74px]"></div>
           </div>
         </div>
@@ -93,7 +96,7 @@ const WinA = ({ property, className, style }) => {
           </div>
           <div className="text-center mt-16 relative origin-bottom -rotate-[2.54deg] max-lg:mt-[-50px] max-lg:ml-[100px]">
             <p className="font-['Neuething'] text-4xl drop-shadow-[2px_-2px_0px_rgba(255,255,255)] max-md:text-[19px]">
-              <span className="text-4xl max-md:text-[19px] ">$50000</span>
+              <span className="text-4xl max-md:text-[19px] ">$50,000</span>
             </p>
             <p className="font-['Neuething'] font-black text-4xl mt-4 max-md:mt-0 drop-shadow-[2px_-2px_0px_rgba(255,255,255)] max-md:text-[19px] ">
               CASH

@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 import { EffectCreative, Pagination } from "swiper/modules";
 
 import Subscription from "../subscriptions/subscription";
-import { properties } from "../subscriptions/subscriptions";
+import { properties } from "./feel-like";
 
 export default function MobileResponsive({isIntersecting, setIsOpen}) {
     return (
@@ -17,7 +17,7 @@ export default function MobileResponsive({isIntersecting, setIsOpen}) {
                 }`}
         >
             <Swiper
-                initialSlide={1}
+                initialSlide={0}
                 effect={"creative"}
                 grabCursor={true}
                 centeredSlides={true}
