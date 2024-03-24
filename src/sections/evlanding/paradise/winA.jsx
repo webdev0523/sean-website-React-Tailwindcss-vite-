@@ -31,7 +31,7 @@ const WinA = ({ property, className, style }) => {
             <img src={tesla} alt="tesla" />
           </div>
           <div className="text-center relative mt-16 origin-bottom -rotate-[2.54deg] max-lg:mt-[-60px] max-lg:ml-[100px]">
-            <p className="font-['Neuething'] text-4xl max-md:text-[19px] text-medium  drop-shadow-[2px_-2px_0px_rgba(255,255,255)] ">
+            <p className="font-['Neuething'] text-4xl max-md:text-[19px] font-medium  drop-shadow-[2px_-2px_0px_rgba(255,255,255)] ">
               Brand New
             </p>
             <p className="font-['Neuething'] text-4xl max-md:text-[19px] font-black mt-4 max-md:mt-0 drop-shadow-[2px_-2px_0px_rgba(255,255,255)]">
@@ -41,12 +41,17 @@ const WinA = ({ property, className, style }) => {
           </div>
         </div>
 
-        <div className="flex justify-center w-full">
-          <img
-            src={curvearrow}
-            alt="curvearrow"
-            className="mt-12 lg:mt-48 max-md:mt-[-20px] max-md:z-[1000]"
-          />
+        <div className="flex justify-center w-full relative">
+          <div className=" relative">
+            <img
+              src={curvearrow}
+              alt="curvearrow"
+              className="mt-12 lg:mt-48 max-md:mt-[-20px] max-md:z-[1000]"
+            />
+            <p className="absolute md:bottom-[-50px] left-0 bottom-0 font-['Neuething'] text-4xl max-md:text-[19px] font-medium  drop-shadow-[2px_-2px_0px_rgba(255,255,255)] text-[#FF4C00]">
+              OR
+            </p>
+          </div>
         </div>
 
         <div className="flex flex-col justify-center items-center max-lg:items-end w-full max-md:mt-[-30px]">
@@ -54,7 +59,7 @@ const WinA = ({ property, className, style }) => {
             <img src={isuzu} alt="isuzu" />
           </div>
           <div className="text-center mt-16 relative origin-bottom -rotate-[2.54deg] max-lg:mt-[-70px] max-lg:mr-[130px]">
-            <p className="font-['Neuething'] text-4xl drop-shadow-[2px_-2px_0px_rgba(255,255,255)]  text-medium max-md:text-[19px]">
+            <p className="font-['Neuething'] text-4xl drop-shadow-[2px_-2px_0px_rgba(255,255,255)]  font-medium max-md:text-[19px]">
               Brand New
             </p>
             <p className="font-['Neuething'] text-4xl mt-4 max-md:mt-0 drop-shadow-[2px_-2px_0px_rgba(255,255,255)]  font-black max-md:text-[19px] ">
@@ -65,16 +70,21 @@ const WinA = ({ property, className, style }) => {
         </div>
 
         <div className="flex justify-center w-full">
-          <img
-            src={curvearrow2}
-            alt="curvearrow"
-            className="mt-12 lg:mt-48 max-lg:!display-none max-md:mt-0"
-          />
-          <img
-            src={curvearrow3}
-            alt="curvearrow"
-            className="mt-12 lg:mt-48 lg:!display-none max-md:mt-[-30px] max-md:z-[1000]"
-          />
+          <div className=" relative">
+            <img
+              src={curvearrow2}
+              alt="curvearrow"
+              className="mt-12 lg:mt-48 max-lg:!display-none max-md:mt-0"
+            />
+            <img
+              src={curvearrow3}
+              alt="curvearrow"
+              className="mt-12 lg:mt-48 lg:!display-none max-md:mt-[-30px] max-md:z-[1000]"
+            />
+            <p className="absolute md:bottom-[-50px] right-0 bottom-7 font-['Neuething'] text-4xl max-md:text-[19px] font-medium  drop-shadow-[2px_-2px_0px_rgba(255,255,255)] text-[#FF4C00] ">
+              OR
+            </p>
+          </div>
         </div>
 
         <div className="flex flex-col justify-center items-center max-lg:items-start w-full max-md:mt-[-50px]">
