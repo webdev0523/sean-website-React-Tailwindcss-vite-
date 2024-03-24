@@ -27,7 +27,7 @@ export default function WhatIsWinlads() {
             label="What Is Winlads"
             className="origin-bottom -rotate-[2.54deg] max-md:text-2xl max-md:font-black"
           />
-          <div className="absolute right-0 md:top-[110%]  w-full flex justify-end">
+          <div className="absolute right-0 md:top-[70%]  w-full flex justify-end">
             <img src={curve} alt="curve" className="max-md:w-[167px] " />
           </div>
         </div>

@@ -88,7 +88,7 @@ export default function Subscriptions() {
           {/* <p className="text-5xl font-black z-[100] relative leading-[64px]"> */}
           <Title label="Free entries" className="origin-bottom -rotate-[2.54deg]" />
           {/* </p> */}
-          <div className="absolute right-0 top-[110%] w-full flex max-md:justify-center justify-end">
+          <div className="absolute right-0 top-[70%] w-full flex max-md:justify-center justify-end">
             <img src={curve} alt="curve" className="max-md:w-[167px] " />
           </div>
         </div>

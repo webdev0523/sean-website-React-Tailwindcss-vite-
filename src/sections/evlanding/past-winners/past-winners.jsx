@@ -63,7 +63,7 @@ export default function PastWinners() {
             label="Past winners"
             className="origin-bottom -rotate-[2.54deg]"
           />
-          <div className="absolute right-0 top-7 w-full flex justify-end">
+          <div className="absolute right-0 top-[70%] w-full flex justify-end">
             <img src={curve} alt="curve" className="max-md:w-[167px] " />
           </div>
         </div>
