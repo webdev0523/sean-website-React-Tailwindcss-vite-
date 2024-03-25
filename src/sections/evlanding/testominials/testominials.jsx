@@ -33,6 +33,16 @@ const cards = [
     userName: "Switch Stephens",
     review: "honesty best bunch of guys running this, they called me and told me I had won 1500 and it was that little boost I needed to get my through the month I can't thank you boys enough"
   },
+  {
+    id: 6,
+    userName: "Steven Miller",
+    review: "I recently won $1000 iin a raffle hosted by Winlads last Sunday and I wanted to leave a good review for them. The process was smooth and easy, and the staff was friendly and professional. I highly recommend Winlads to anyone looking to try their luck and potentially win big! Thank you for the amazing opportunity and for making my Sunday a memorable one."
+  },
+  {
+    id: 7,
+    userName: "Michael Brady",
+    review: "Check them out amazing giveaways!! affordable entries :) would recommend"
+  },
 ];
 
 export default function Testominials() {

@@ -92,7 +92,7 @@ export default function FeelLike() {
           <div className="flex justify-center">
             <div className="relative w-fit">
               <Title
-                label="One of Entries part"
+                label="just a one off entry?"
                 className="origin-bottom -rotate-[2.54deg] w-fit"
               />
               <div className="absolute right-0 bottom-[-40px] md:bottom-[-90px]">
