@@ -52,7 +52,7 @@ const Subscription = ({ property, className, style, setIsOpen }) => {
             <p>
               {/* Referral Commission:{" "}
               <span className="font-bold">{property.referral}</span> */}
-              3 days access to partnered discounts
+              {property.days} days access to partnered discounts
             </p>
           </div>
           {/* <div className="flex items-start py-1">

@@ -20,6 +20,7 @@ export const properties = [
     discounts: "Partner Store Discounts: ",
     discountsPercent: "10%-15%",
     buttonColor: "bg-[#296FB8]",
+    days: "3"
   },
   {
     borderColor: "border-[#FE705C]",
@@ -31,6 +32,7 @@ export const properties = [
     discounts: "Partner Store Discounts: ",
     discountsPercent: "10%",
     buttonColor: "bg-[#FE705C]",
+    days: "5"
   },
   {
     borderColor: "border-[#5EC1DC]",
@@ -42,6 +44,7 @@ export const properties = [
     discounts: "Partner Store Discounts: ",
     discountsPercent: "10%-15%",
     buttonColor: "bg-[#5EC1DC]",
+    days: "7"
   },
   {
     borderColor: "border-[#FFBC0B]",
@@ -53,6 +56,7 @@ export const properties = [
     discounts: "Be Elighible To Apply For Winlad GOLD Card",
     discountsPercent: "",
     buttonColor: "bg-[#FFBC0B]",
+    days: "9"
   },
   {
     borderColor: "border-[#1A1D21]",
@@ -64,6 +68,7 @@ export const properties = [
     discounts: "Customized Partner Store Discount Rates Ranging Upto 20%",
     discountsPercent: "",
     buttonColor: "bg-[#1A1D21]",
+    days: "11"
   },
 ];
 
