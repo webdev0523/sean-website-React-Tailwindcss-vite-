@@ -7,7 +7,7 @@ import tesla from "../../../assets/icons/tesla.svg";
 
 const isuzuModel = {
     name: "D-MAX X-Terrain",
-    range: "960",
+    range: "600+",
     speed: "240",
     mph: "9.8",
     startMph: "0",
@@ -25,7 +25,7 @@ const isuzuModel = {
 
 const teslaModel = {
     name: "Model Y",
-    range: "735",
+    range: "455",
     speed: "217",
     mph: "6.9",
     startMph: "0",
@@ -58,7 +58,7 @@ export default function CarModel() {
                     <div className="mt-3">
                         <p>
                             <span className="font-medium text-4xl text-justify max-lg:text-2xl">{isuzuModel.range}</span>
-                            <span className="font-light text-2xl text-justify max-lg:text-base">km</span>
+                            <span className="font-light text-2xl text-justify max-lg:text-base">Kms</span>
                         </p>
                         <p className="font-normal text-2xl max-lg:text-xs">Range(est.)</p>
                     </div>
@@ -104,7 +104,7 @@ export default function CarModel() {
                     <div className="mt-3">
                         <p>
                             <span className="font-medium text-4xl text-justify max-lg:text-2xl">{teslaModel.range}</span>
-                            <span className="font-light text-2xl text-justify max-lg:text-base">km</span>
+                            <span className="font-light text-2xl text-justify max-lg:text-base">Kms</span>
                         </p>
                         <p className="font-normal text-2xl max-lg:text-xs">Range(est.)</p>
                     </div>
