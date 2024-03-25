@@ -33,34 +33,37 @@ const Subscription = ({ property, className, style, setIsOpen }) => {
           </div>
         </div>
 
-        <div className="p-[9px] bg-white">
+        {/* <div className="p-[9px] bg-white">
           <p className="text-center font-medium text-xs bg-white/[.46] text-[#282C33]">
             Accumulation Entries
           </p>
-        </div>
+        </div> */}
 
         <div className="px-[12px] text-sm h-[105px] pt-[9px]">
           <div className="flex items-start py-1">
             <img src={check}></img>
             <p>
-              <span className="font-bold">${property.price}</span> Per Month
+              {/* <span className="font-bold">${property.price}</span> Per Month */}
+              Exclusive invitations to all VIP Winlads events
             </p>
           </div>
           <div className="flex items-start py-1">
             <img src={check}></img>
             <p>
-              Referral Commission:{" "}
-              <span className="font-bold">{property.referral}</span>
+              {/* Referral Commission:{" "}
+              <span className="font-bold">{property.referral}</span> */}
+              3 days access to partnered discounts
             </p>
           </div>
-          <div className="flex items-start py-1">
+          {/* <div className="flex items-start py-1">
             <img src={check}></img>
             <p>
               {property.discounts}
               <span className="font-bold">{property.discountsPercent}</span>
             </p>
-          </div>
+          </div> */}
         </div>
+
         <div className="mt-[23px] max-md:m-2 px-2">
           <button className=" border border-black/[.13] rounded-lg text-sm font-normal py-[14px] max-md:text-xs max-md:px-5 w-full ">
             View More...
