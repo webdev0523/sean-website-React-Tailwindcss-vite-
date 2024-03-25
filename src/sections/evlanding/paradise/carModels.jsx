@@ -7,8 +7,8 @@ import tesla from "../../../assets/icons/tesla.svg";
 
 const isuzuModel = {
     name: "D-MAX X-Terrain",
-    range: "600+",
-    speed: "180",
+    range: "950",
+    speed: "175",
     mph: "9.8",
     startMph: "0",
     endMph: "100",
