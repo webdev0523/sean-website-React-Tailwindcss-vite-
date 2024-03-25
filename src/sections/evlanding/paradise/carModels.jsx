@@ -81,7 +81,7 @@ export default function CarModel() {
                     <div>
                         {
                             isuzuModel.features.map((feature, index) => (
-                                <p key={index} className="font-normal text-2xl max-md:text-sm max-md:leading-6 text-justify">{feature}</p>
+                                <p key={index} className="font-normal text-2xl max-md:text-sm max-md:leading-6 text-justify mt-3">{feature}</p>
                             ))
                         }
                     </div>
@@ -127,7 +127,7 @@ export default function CarModel() {
                     <div>
                         {
                             teslaModel.features.map((feature, index) => (
-                                <p key={index} className="font-normal text-2xl max-md:text-sm max-md:leading-6 text-justify">{feature}</p>
+                                <p key={index} className="font-normal text-2xl max-md:text-sm max-md:leading-6 text-justify mt-3">{feature}</p>
                             ))
                         }
                     </div>
