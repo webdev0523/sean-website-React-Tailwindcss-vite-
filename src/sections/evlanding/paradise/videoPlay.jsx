@@ -27,7 +27,7 @@ export default function VideoPlay() {
 
                 <div className="basis-1/2 px-4 sm:px-28 mt-[200px] max-lg:mt-10 ">
                     <p className="font-light text-xl leading-8  text-justify">
-                        Welcome to our BIGGEST giveaway yet! We are offering three irresistible options: A brand New Tesla Model Y, a brand-new Isuzu D-Max or a whopping $50,000 in cold, hard cash.
+                        Welcome to our BIGGEST giveaway yet! We are offering three irresistible options: A brand New Tesla Model Y, a brand-new Isuzu D-Max X-Terrain or a whopping $50,000 in cold, hard cash.
                     </p>
                     <br />
                     <p className="font-light text-xl leading-8  text-justify">

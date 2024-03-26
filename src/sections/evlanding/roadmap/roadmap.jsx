@@ -74,7 +74,7 @@ export default function Roadmap() {
 						<div className='flex items-center absolute top-[-70%] left-[-150%] max-w-[200px]'>
 							<div>
 								<p className=' font-medium text-2xl text-[#FF4C00]'>24th March</p>
-								<p className=' font-normal text-base'>2024 Tesla Model Y, Isuzu D-Max X-Terrain or $50,000 Laun</p>
+								<p className=' font-normal text-base'>2024 Tesla Model Y, Isuzu D-Max X-Terrain or $50,000</p>
 							</div>
 							<div className=''>
 								<svg width="66" height="23" viewBox="0 0 66 23" fill="none" xmlns="http://www.w3.org/2000/svg">

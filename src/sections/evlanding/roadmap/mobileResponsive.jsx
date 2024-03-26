@@ -24,7 +24,7 @@ const points = [
     {
         img: img3,
         title: "24th March",
-        content: "2024 Tesla Model Y, Isuzu D-Max X-Terrain or $50,000 Laun",
+        content: "2024 Tesla Model Y, Isuzu D-Max X-Terrain or $50,000",
         color: ""
     },
     {
